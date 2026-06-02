@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free Triage Skill Assessment — Hacking101</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-icon" aria-hidden="true">&#128737;</span>
+        <span>Hacking<span class="accent">101</span></span>
+      </a>
+      <div class="nav-ring">
+        <span class="nav-dot" aria-hidden="true"></span>
+        <span class="nav-label">Training Network: <strong>14/14</strong> subnets · <strong>1,240</strong> targets</span>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="compliance.html">Compliance</a>
+        <a href="alumni.html">Alumni</a>
+        <a href="videos.html">Videos</a>
+        <a href="resources.html">Resources</a>
+        <a href="status.html">System Status</a>
+        <a href="transparency.html">Transparency</a>
+        <a href="corporate.html">Corporate</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html" class="btn btn-primary btn-nav">Enrol</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="padding:72px 0 88px">
+      <div class="container">
+        <span class="course-tag" style="display:inline-block;margin-bottom:14px">Free Assessment</span>
+        <h1>Triage Skill Assessment</h1>
+        <p class="hero-sub">Five questions to determine your starting pathway. This is not a test — it's a triage. Be honest. There are no trick questions. You need at least <strong>3 of 5</strong> correct to unlock our advanced course catalogue and pricing.</p>
+      </div>
+    </section>
+
+    <section class="courses">
+      <div class="container">
+        <form id="triageForm" novalidate>
+          <div class="card" style="padding:24px;margin-bottom:18px" data-question="1">
+            <p style="margin:0 0 14px;font-weight:600">1. What layer of the OSI model does HTTP operate on?</p>
+            <label style="display:block;margin:8px 0;cursor:pointer"><input type="radio" name="q1" value="a" /> Layer 3 (Network)</label>
+            <label style="display:block;margin:8px 0;cursor:pointer"><input type="radio" name="q1" value="b" /> Layer 7 (Application)</label>
+            <label style="display:block;margin:8px 0;cursor:pointer"><input type="radio" name="q1" value="c" /> Layer 4 (Transport)</label>
+          </div>
+
+          <div class="card" style="padding:24px;margin-bottom:18px" data-question="2">
+            <p style="margin:0 0 14px;font-weight:600">2. Which tool is primarily used for network packet capture and analysis?</p>
+            <label style="display:block;margin:8px 0;cursor:pointer"><input type="radio" name="q2" value="a" /> Metasploit</label>
+            <label style="display:block;margin:8px 0;cursor:pointer"><input type="radio" name="q2" value="b" /> Wireshark</label>
+            <label style="display:block;margin:8px 0;cursor:pointer"><input type="radio" name="q2" value="c" /> Nmap</label>
+          </div>
+
+          <div class="card" style="padding:24px;margin-bottom:18px" data-question="3">
+            <p style="margin:0 0 14px;font-weight:600">3. What does SQL injection target?</p>
+            <label style="display:block;margin:8px 0;cursor:pointer"><input type="radio" name="q3" value="a" /> Network firewalls</label>
+            <label style="display:block;margin:8px 0;cursor:pointer"><input type="radio" name="q3" value="b" /> Database queries</label>
+            <label style="display:block;margin:8px 0;cursor:pointer"><input type="radio" name="q3" value="c" /> Operating system kernels</label>
+          </div>
+
+          <div class="card" style="padding:24px;margin-bottom:18px" data-question="4">
+            <p style="margin:0 0 14px;font-weight:600">4. Which Australian government agency publishes the Essential Eight?</p>
+            <label style="display:block;margin:8px 0;cursor:pointer"><input type="radio" name="q4" value="a" /> ASD / ACSC</label>
+            <label style="display:block;margin:8px 0;cursor:pointer"><input type="radio" name="q4" value="b" /> ASIO</label>
+            <label style="display:block;margin:8px 0;cursor:pointer"><input type="radio" name="q4" value="c" /> ATO</label>
+          </div>
+
+          <div class="card" style="padding:24px;margin-bottom:22px" data-question="5">
+            <p style="margin:0 0 14px;font-weight:600">5. In the CIA triad, what does the "C" stand for?</p>
+            <label style="display:block;margin:8px 0;cursor:pointer"><input type="radio" name="q5" value="a" /> Compliance</label>
+            <label style="display:block;margin:8px 0;cursor:pointer"><input type="radio" name="q5" value="b" /> Confidentiality</label>
+            <label style="display:block;margin:8px 0;cursor:pointer"><input type="radio" name="q5" value="c" /> Control</label>
+          </div>
+
+          <button type="submit" class="btn btn-accent btn-lg btn-block">Submit Assessment</button>
+        </form>
+
+        <div id="triageResult" style="margin-top:22px;display:none">
+          <div class="card" style="padding:24px">
+            <h2 id="triageTitle" style="margin:0 0 8px"></h2>
+            <p id="triageBody" class="muted"></p>
+            <div id="triageActions" style="margin-top:16px;display:flex;gap:12px;flex-wrap:wrap"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Hacking101</strong>
+        <p class="muted">Australian Cyber Security Academy Pty Ltd</p>
+        <p class="muted">enquiries@hacking101.com.au<br/>+61 60 626 8545</p>
+        <p class="muted" style="margin-top:6px">Hosted in secure AU-East datacentres</p>
+      </div>
+      <div>
+        <strong>Assessment</strong>
+        <ul>
+          <li><a href="triage-assessment.html">Triage Quiz</a></li>
+          <li><a href="resources.html">Free Resources</a></li>
+          <li><a href="ctf-leaderboard.html">CTF Ladder</a></li>
+        </ul>
+      </div>
+      <div>
+        <strong>Legal</strong>
+        <ul>
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="responsible-use.html">Responsible Disclosure</a></li>
+          <li><a href="transparency.html">Transparency</a></li>
+        </ul>
+      </div>
+      <div>
+        <strong>Verify</strong>
+        <ul>
+          <li><a href="#">Verify a Certificate</a></li>
+          <li><a href="contact.html">Contact form</a></li>
+          <li><a href="mailto:enquiries@hacking101.com.au">Email us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container legal-line">
+      <small>&copy; Hacking101 Academy. Use skills responsibly. Unauthorised access is a criminal offence.</small>
+    </div>
+  </footer>
+
+  <script>
+    const CORRECT = { q1: 'b', q2: 'b', q3: 'b', q4: 'a', q5: 'b' };
+    const PASSING = 3;
+
+    document.getElementById('triageForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const form = e.target;
+      const answered = Object.keys(CORRECT).every(k => form.querySelector(`[name="${k}"]:checked`));
+      if (!answered) { alert('Please answer all 5 questions before submitting.'); return; }
+
+      let score = 0;
+      Object.keys(CORRECT).forEach(k => {
+        if (form.querySelector(`[name="${k}"]:checked`).value === CORRECT[k]) score++;
+      });
+
+      const result = document.getElementById('triageResult');
+      const title = document.getElementById('triageTitle');
+      const body = document.getElementById('triageBody');
+      const actions = document.getElementById('triageActions');
+      result.style.display = 'block';
+      result.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+      if (score >= PASSING) {
+        title.textContent = `Assessment complete — ${score}/${Object.keys(CORRECT).length} correct. You qualify.`;
+        body.textContent = 'Based on your responses, you are ready for our Professional and Enterprise pathways. Access to the full course catalogue and pricing is now unlocked.';
+        actions.innerHTML = `
+          <a href="pricing.html" class="btn btn-primary btn-lg">View Pricing &amp; Enrol</a>
+          <a href="courses.html" class="btn btn-ghost btn-lg">Browse Courses</a>
+        `;
+      } else {
+        title.textContent = `Assessment complete — ${score}/${Object.keys(CORRECT).length} correct.`;
+        body.textContent = 'We recommend starting with our Ethical Hacking Foundations programme. It will bring you up to speed and prepare you for advanced specialisations.';
+        actions.innerHTML = `
+          <a href="courses.html" class="btn btn-primary btn-lg">View Foundation Course</a>
+          <a href="contact.html" class="btn btn-ghost btn-lg">Speak to an Advisor</a>
+        `;
+      }
+    });
+  </script>
+</body>
+</html>

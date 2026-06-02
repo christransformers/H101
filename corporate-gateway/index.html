@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Corporate Gateway — Hacking101 Academy Enterprise</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/style.css" />
+  <style>
+    .locked-overlay{
+      background:
+        repeating-linear-gradient(0deg,rgba(245,158,11,.03) 0 2px,transparent 2px 40px),
+        linear-gradient(180deg,#090e18,#0b1220 40%,#090e18);
+      min-height:100vh;display:flex;align-items:center;justify-content:center;
+    }
+    .locked-card{
+      max-width:440px;width:92%;
+      background:linear-gradient(180deg,#0e1424,#0b1220);
+      border:1px solid rgba(245,158,11,.2);
+      border-radius:20px;padding:36px 30px;
+    }
+    .locked-card .logo{font-size:1.6rem;font-weight:700;color:#cfe2ff;margin-bottom:4px}
+    .locked-card h1{font-size:1.05rem;margin:0 0 18px;color:#8ab}
+    .locked-card label{display:block;text-align:left;font-size:.88rem;font-weight:600;color:#8ab;margin:0 0 6px}
+    .locked-card input{width:100%;background:rgba(255,255,255,.04);border:1px solid rgba(138,160,191,.18);color:#eaf2ff;border-radius:10px;padding:12px 14px;font:inherit;margin:0 0 14px;outline:none}
+    .locked-card input:focus{border-color:rgba(245,158,11,.5);box-shadow:0 0 0 3px rgba(245,158,11,.1)}
+    .locked-card button{width:100%;margin:4px 0 0}
+    .locked-card .hint{color:#6e88a6;font-size:.82rem;margin-top:14px}
+    .locked-card .lock-icon{font-size:2.2rem;margin-bottom:10px}
+    .brand-strip{background:rgba(255,255,255,.02);border-bottom:1px solid rgba(138,160,191,.12);padding:18px 0;text-align:center;text-decoration:none;color:#cfe2ff;font-weight:600;display:block}
+    .corp-only{color:#f59e0b;font-weight:700}
+  </style>
+</head>
+<body>
+  <a class="brand-strip" href="../index.html">&#8592; Back to Hacking101 Academy (open site)</a>
+  <div class="locked-overlay">
+    <div class="locked-card">
+      <div class="lock-icon" aria-hidden="true">&#127970;&#128274;</div>
+      <div class="logo">CORPORATE GATEWAY</div>
+      <h1>Client-safe training environment <span class="corp-only">· Auth required</span></h1>
+      <form onsubmit="event.preventDefault();alert('Corporate Gateway access is granted after signing a mutual NDA. Contact enterprise@hacking101.com.au to start.');">
+        <label for="ccompany">Company / Agency</label>
+        <input id="ccompany" type="text" placeholder="Acme Corp" required />
+        <label for="cemail">Work email</label>
+        <input id="cemail" type="email" placeholder="you@company.com.au" required />
+        <label for="ctoken">Client Access Token</label>
+        <input id="ctoken" type="text" placeholder="Provided by your engagement manager" required />
+        <button type="submit" class="btn btn-accent btn-lg btn-block">Enter Corporate Gateway</button>
+      </form>
+      <p class="hint">🔒 Issued per engagement via NDA. Active quarterly cohorts only. Token expires on contract end date.</p>
+    </div>
+  </div>
+</body>
+</html>

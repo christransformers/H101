@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Portal Login — Hacking101 Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/style.css" />
+  <style>
+    .locked-overlay{
+      background:
+        repeating-linear-gradient(0deg,rgba(14,165,233,.04) 0 2px,transparent 2px 40px),
+        linear-gradient(180deg,#090e18,#0b1220 40%,#090e18);
+      min-height:100vh;
+      display:flex;align-items:center;justify-content:center;
+    }
+    .locked-card{
+      max-width:400px;width:92%;
+      background:linear-gradient(180deg,#0e1424,#0b1220);
+      border:1px solid rgba(138,160,191,.15);
+      border-radius:20px;
+      padding:36px 30px;
+      text-align:center;
+    }
+    .locked-card .logo{font-size:2rem;margin-bottom:6px}
+    .locked-card h1{font-size:1.15rem;margin:0 0 18px;color:#cfe2ff}
+    .locked-card label{display:block;text-align:left;font-size:.88rem;font-weight:600;color:#8ab;margin:0 0 6px}
+    .locked-card input{width:100%;background:rgba(255,255,255,.04);border:1px solid rgba(138,160,191,.18);color:#eaf2ff;border-radius:10px;padding:12px 14px;font:inherit;margin:0 0 14px;outline:none;box-sizing:border-box}
+    .locked-card input:focus{border-color:rgba(14,165,233,.55);box-shadow:0 0 0 3px rgba(14,165,233,.12)}
+    .locked-card button{width:100%;margin-top:4px}
+    .locked-card .hint{color:#6e88a6;font-size:.82rem;margin-top:14px}
+    .locked-card .lock-icon{font-size:2.4rem;margin-bottom:10px}
+    .brand-strip{background:rgba(255,255,255,.02);border-bottom:1px solid rgba(138,160,191,.12);padding:18px 0;text-align:center;text-decoration:none;color:#cfe2ff;font-weight:600;display:block}
+  </style>
+</head>
+<body>
+  <a class="brand-strip" href="../index.html">&#8592; Back to Hacking101 Academy (open site)</a>
+  <div class="locked-overlay">
+    <div class="locked-card">
+      <div class="lock-icon" aria-hidden="true">&#128737;&#128274;</div>
+      <div class="logo">Hacking<span style="color:#0ea5e9">101</span> <span style="font-size:.78rem;color:#8aa0bf;font-weight:500">ACADEMY</span></div>
+      <h1>Student Portal</h1>
+      <form onsubmit="event.preventDefault();alert('Portal login is for enrolled students only. Enrol at hacking101.com.au to receive your credentials.');">
+        <label for="semail">Student email address</label>
+        <input id="semail" type="email" placeholder="you@example.com" required />
+        <label for="spass">Password</label>
+        <input id="spass" type="password" placeholder="••••••••" required />
+        <button type="submit" class="btn btn-primary btn-lg btn-block">Sign In</button>
+      </form>
+      <p class="hint">🔒 Portal access is restricted to current students.<br/>Enrol to receive your credentials within 24 hours of payment confirmation.</p>
+    </div>
+  </div>
+</body>
+</html>

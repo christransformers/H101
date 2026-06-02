@@ -94,7 +94,8 @@ section+section{border-top:1px solid var(--line)}
 /* Course card */
 .course-card .card-media{position:relative;height:160px;display:grid;place-items:center;background:
   radial-gradient(400px 250px at center,rgba(14,165,233,.14),transparent),#0b1220}
-.course-icon{font-size:2.6rem}
+.course-icon{font-size:2.6rem;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:10px;background:#0f172a;display:flex;align-items:center;justify-content:center;overflow:hidden;line-height:1}
+.course-icon img{width:100%;height:100%;object-fit:cover;display:block}
 .course-tag{position:absolute;top:14px;left:14px;background:rgba(14,165,233,.16);color:#7dd3fc;border:1px solid rgba(14,165,233,.25);padding:6px 10px;border-radius:999px;font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
 .course-meta{margin:14px 0 16px;display:grid;grid-template-columns:1fr 1fr;gap:8px 12px}
 .course-meta li{display:flex;justify-content:space-between;border-bottom:1px dashed var(--line);padding:10px 0;font-size:.92rem}
