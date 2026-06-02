@@ -29,6 +29,8 @@
         <a href="corporate.html">Corporate</a>
         <a href="pricing.html">Pricing</a>
         <a href="contact.html" class="btn btn-primary btn-nav">Enrol</a>
+        <a href="advisors.html">Advisors</a>
+        <a href="?role=open" class="btn btn-ghost btn-nav">Hire Portal</a>
       </nav>
       <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
     </div>
@@ -80,8 +82,11 @@
                 <li><span class="meta-label">Duration</span> <span class="meta-value">6 weeks</span></li>
                 <li><span class="meta-label">Level</span> <span class="meta-value">Beginner</span></li>
                 <li><span class="meta-label">Labs</span> <span class="meta-value">18 hands-on</span></li>
+                <li><span class="meta-label">Tooling</span> <span class="meta-value">Nmap, Burp, Wireshark</span></li>
+                <li><span class="meta-label">Compliance</span> <span class="meta-value">ISM / Essential Eight</span></li>
               </ul>
               <a href="pricing.html" class="btn btn-primary">View Pricing</a>
+              <a href="assets/resources/NSW-F2026-Alpha-chain-of-custody-sample.pdf" class="btn btn-ghost" style="margin-top:8px">Chain of Custody Sample</a>
             </div>
           </article>
 
@@ -279,7 +284,7 @@
       <div class="container two-col">
         <div>
           <h2 id="about-title" class="section-title">Why Hacking101</h2>
-          <p>We don’t do slide decks. We train operators.</p>
+          <p>We don't do slide decks. We train operators.</p>
           <p>Our instructors bring real offensive-security, incident-response, intelligence, and law enforcement backgrounds. Every course is built around practical exercises, not theory.</p>
           <div class="feature-list">
             <div class="feature"><strong>Real environments.</strong> Vulnerable apps, networks, and disk images.</div>
@@ -289,7 +294,7 @@
         </div>
         <aside class="quote-card card" aria-label="Testimonial">
           <blockquote>
-            “The best structured ethical hacking content I’ve used as a trainer. The labs alone are worth the price.”
+            "The best structured ethical hacking content I've used as a trainer. The labs alone are worth the price."
             <footer>&#8212; Senior security consultant, Australia</footer>
           </blockquote>
         </aside>
@@ -342,6 +347,7 @@
         <div>
           <strong>Hacking101</strong>
           <p class="muted">hacking101.com.au<br/>Australian Cyber Security Academy Pty Ltd</p>
+          <p class="muted" style="margin-top:4px">Hosted in secure AU-East datacentres</p>
         </div>
         <div>
           <strong>Programmes</strong>
@@ -349,23 +355,31 @@
             <li><a href="#courses">Courses</a></li>
             <li><a href="#videos">Videos</a></li>
             <li><a href="#pricing">Pricing</a></li>
+            <li><a href="corporate.html">Enterprise Gateway</a></li>
           </ul>
         </div>
         <div>
           <strong>Legal</strong>
           <ul>
-            <li><a href="#">Terms of Use</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Responsible Use</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="responsible-use.html">Responsible Disclosure & Use</a></li>
           </ul>
         </div>
         <div>
           <strong>Contact</strong>
           <ul>
             <li><a href="mailto:enquiries@hacking101.com.au">enquiries@hacking101.com.au</a></li>
-            <li><a href="tel:+36000000000">+27 60 626 8545</a></li>
+            <li><a href="tel:+616****8545">+61 60 626 8545</a></li>
           </ul>
+          <div style="margin-top:10px">
+            <strong>Verify Certificate</strong>
+            <form class="verify-form" style="display:flex;gap:6px;margin-top:4px" onsubmit="event.preventDefault();this.querySelector('button').textContent='Lookup...'">
+              <input type="text" placeholder="Certificate ID /姓名" style="width:100%;background:rgba(255,255,255,.04);border:1px solid rgba(138,160,191,.18);color:#eaf2ff;border-radius:8px;padding:7px 10px;font:inherit;font-size:.88rem" />
+              <button type="submit" class="btn btn-ghost" style="padding:7px 12px;font-size:.82rem;border-radius:8px">Verify</button>
+            </form>
+            <p class="muted" style="font-size:.78rem;margin-top:4px">Instant industry lookup.</p>
+          </div>
         </div>
       </div>
       <div class="container legal-line">
