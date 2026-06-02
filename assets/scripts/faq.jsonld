@@ -1,0 +1,30 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What educational services does Hacking101 provide?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hacking101 is an Australian cyber-security academy offering courses in ethical hacking, cyber security, ethical social engineering, and digital forensics via online training, optional on-site intensive bootcamps, and corporate briefings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Hacking101 based in Australia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Hacking101 Academy operates as Australian Cyber Security Academy Pty Ltd with secure technical hubs in the Sydney and Penrith area."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What compliance frameworks are covered?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Courses are aligned to ASD Essential Eight, ASD Information Security Manual, NIST Cybersecurity Framework, MITRE ATT&CK, and OWASP Top 10."
+      }
+    }
+  ]
+}

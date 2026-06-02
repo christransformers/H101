@@ -1,0 +1,49 @@
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Hacking101 Academy",
+  "legalName": "Australian Cyber Security Academy Pty Ltd",
+  "url": "https://hacking101.com.au",
+  "logo": "https://hacking101.com.au/assets/imgs/logo.png",
+  "email": "mailto:enquiries@hacking101.com.au",
+  "telephone": "+61-60-626-8545",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Penrith",
+    "addressRegion": "NSW",
+    "addressCountry": "AU"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Australia"
+  },
+  "sameAs": [
+    "https://github.com/christransformers/H101"
+  ],
+  "makesOffer": [
+    {
+      "@type": "Course",
+      "name": "Intro to Ethical Hacking",
+      "description": "6-week foundation course covering recon, scanning, enumeration, and reporting.",
+      "provider": { "@type": "Organization", "name": "Hacking101 Academy" }
+    },
+    {
+      "@type": "Course",
+      "name": "Web Application Penetration Testing",
+      "description": "10-week specialisation covering OWASP Top 10, IDOR, SSRF, API attacks.",
+      "provider": { "@type": "Organization", "name": "Hacking101 Academy" }
+    },
+    {
+      "@type": "Course",
+      "name": "Ethical Social Engineering",
+      "description": "8-week specialisation covering PREA, vishing, physical security assessment.",
+      "provider": { "@type": "Organization", "name": "Hacking101 Academy" }
+    },
+    {
+      "@type": "Course",
+      "name": "Digital Forensics and Incident Response",
+      "description": "10-week professional course covering memory, disk, malware, chain-of-custody.",
+      "provider": { "@type": "Organization", "name": "Hacking101 Academy" }
+    }
+  ]
+}
