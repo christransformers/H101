@@ -4,90 +4,86 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact — Hacking101</title>
+  <meta name="description" content="Contact Hacking101 Academy for enrolment, corporate training enquiries, and partnership opportunities. Human review within 1 business day. Based in Sydney and Penrith, Australia." />
+  <meta property="og:title" content="Contact Hacking101 — Cybersecurity Training Enquiries" />
+  <meta property="og:description" content="Get in touch with Australia's premier cybersecurity academy. Enrolment, corporate training, and partnerships." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hacking101.com.au/contact.html" />
+  <meta property="og:image" content="https://hacking101.com.au/assets/imgs/hero-ops.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://hacking101.com.au/contact.html" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" href="assets/imgs/logo.png" />
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <img src="assets/imgs/logo.png" alt="Hacking101" class="brand-logo" />
-        <span>Hacking<span class="accent">101</span></span>
-      </a>
-      <nav class="nav" aria-label="Primary">
-        <a href="about.html">About</a>
-        <a href="courses.html">Courses</a>
-        <a href="videos.html">Videos</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="contact.html" class="btn btn-primary btn-nav">Enrol</a>
-        <a href="advisors.html">Advisors</a>
-        <a href="?role=open" class="btn btn-ghost btn-nav">Hire Portal</a>
+      <a class="brand" href="index.html"><img src="assets/imgs/logo.png" alt="Hacking101" class="brand-logo" width="40" height="40" /><span>Hacking<span class="accent">101</span></span></a>
+      <div class="nav-ring"><span class="nav-dot" aria-hidden="true"></span><span class="nav-label">Training Network: <strong>14/14</strong> subnets · <strong>1,240</strong> targets</span></div>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="courses.html">Courses</a><a href="compliance.html">Compliance</a><a href="alumni.html">Alumni</a><a href="pricing.html">Pricing</a><a href="corporate.html">Corporate</a><a href="advisors.html">Advisors</a><a href="status.html" class="status-link">System Status</a><a href="contact.html" class="btn btn-primary btn-nav nav-current">Enrol</a><a href="?role=open" class="btn btn-ghost btn-nav">Hire Portal</a>
       </nav>
       <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
     </div>
   </header>
 
-  <main>
-    <section class="hero" style="padding:72px 0 88px">
+  <main id="main-content">
+    <section style="padding:72px 0 56px">
       <div class="container">
-        <h1>Contact</h1>
-        <p class="hero-sub">Human team members review every enquiry. No bots.</p>
+        <div class="hero-badge">Contact</div>
+        <h1 style="font-size:clamp(2rem,4.6vw,3rem);line-height:1.1;margin:14px 0">Human team members review every enquiry. <span class="accent">No bots.</span></h1>
+        <p class="hero-sub">Australian Cyber Security Academy Pty Ltd · Sydney / Penrith · AU-East datacentres</p>
+        <div style="margin-top:22px;border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,.08);box-shadow:0 20px 60px rgba(0,0,0,.35)"><img src="assets/imgs/team-group-photo.png" alt="Hacking101 team" style="width:100%;max-height:340px;object-fit:cover;display:block" /></div>
       </div>
     </section>
 
-    <section class="enrol">
+    <section class="section-alt">
       <div class="container">
         <div class="grid two">
-          <div class="card enrol-card" style="padding:28px">
-            <h2 class="section-title">Enquire / Enrol</h2>
-            <form class="enrol-form" novalidate>
-              <div class="grid two">
-                <div class="field">
-                  <label for="fname">First name</label>
-                  <input id="fname" type="text" required />
+          <div class="card enrol-card" style="padding:0">
+            <div class="card-body">
+              <h2 class="section-title">Enquire / Enrol</h2>
+              <form class="enrol-form" novalidate>
+                <div class="grid two">
+                  <div class="field"><label for="fname">First name</label><input id="fname" type="text" required autocomplete="given-name" /></div>
+                  <div class="field"><label for="lname">Last name</label><input id="lname" type="text" required autocomplete="family-name" /></div>
                 </div>
+                <div class="field"><label for="email">Work email</label><input id="email" type="email" required autocomplete="email" /></div>
                 <div class="field">
-                  <label for="lname">Last name</label>
-                  <input id="lname" type="text" required />
+                  <label for="course">Course interest</label>
+                  <select id="course">
+                    <option value="">Select a course</option>
+                    <option>Intro to Ethical Hacking</option>
+                    <option>Web Application Penetration Testing</option>
+                    <option>Ethical Social Engineering</option>
+                    <option>Digital Forensics &amp; Incident Response</option>
+                    <option>Enterprise / Team Training</option>
+                  </select>
                 </div>
-              </div>
-              <div class="field">
-                <label for="email">Work email</label>
-                <input id="email" type="email" required />
-              </div>
-              <div class="field">
-                <label for="course">Course interest</label>
-                <select id="course">
-                  <option value="">Select a course</option>
-                  <option>Intro to Ethical Hacking</option>
-                  <option>Web Application Penetration Testing</option>
-                  <option>Ethical Social Engineering</option>
-                  <option>Digital Forensics &amp; Incident Response</option>
-                  <option>Enterprise / Team Training</option>
-                </select>
-              </div>
-              <div class="field">
-                <label for="message">Message</label>
-                <textarea id="message" rows="5"></textarea>
-              </div>
-              <button type="submit" class="btn btn-accent btn-lg btn-block">Submit Enquiry</button>
-              <p class="form-note">Human review within 1 business day.</p>
-            </form>
+                <div class="field"><label for="message">Message</label><textarea id="message" rows="5"></textarea></div>
+                <button type="submit" class="btn btn-accent btn-lg btn-block">Submit Enquiry</button>
+                <p class="form-note">&#128274; Human review within 1 business day. No spam.</p>
+              </form>
+            </div>
           </div>
 
           <div>
-            <div class="card" style="padding:22px;margin-bottom:14px">
-              <h3 style="margin:0 0 8px">Email</h3>
+            <div class="card" style="padding:24px;margin-bottom:16px">
+              <h3 style="margin:0 0 8px;color:var(--text)">Email</h3>
               <p><a href="mailto:enquiries@hacking101.com.au" class="btn btn-ghost">enquiries@hacking101.com.au</a></p>
             </div>
-            <div class="card" style="padding:22px;margin-bottom:14px">
-              <h3 style="margin:0 0 8px">Phone</h3>
-              <p><a href="tel:+61606268545" class="btn btn-ghost">+61 60 626 8545</a></p>
+            <div class="card" style="padding:24px;margin-bottom:16px">
+              <h3 style="margin:0 0 8px;color:var(--text)">Phone</h3>
+              <p><a href="tel:+616****8545" class="btn btn-ghost">+61 60 626 8545</a></p>
             </div>
-            <div class="card" style="padding:22px">
-              <h3 style="margin:0 0 8px">Office</h3>
-              <p class="muted">Australian Cyber Security Academy Pty Ltd<br/>Registered Australia<br/>By appointment only.</p>
+            <div class="card" style="padding:24px">
+              <h3 style="margin:0 0 8px;color:var(--text)">Office</h3>
+              <p class="muted">Australian Cyber Security Academy Pty Ltd<br/>Registered in Australia<br/>By appointment only — Sydney &amp; Penrith hubs</p>
+              <p class="muted" style="margin-top:8px;font-size:.85rem">&#127970; Hosted in secure AU-East datacentres</p>
             </div>
           </div>
         </div>
@@ -97,42 +93,17 @@
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div>
-        <strong>Hacking101</strong>
-        <p class="muted">Australian Cyber Security Academy Pty Ltd</p>
-        <p class="muted">enquiries@hacking101.com.au<br/>+61 60 626 8545</p>
-      </div>
-      <div>
-        <strong>Programmes</strong>
-        <ul>
-          <li><a href="courses.html">Courses</a></li>
-          <li><a href="videos.html">Videos</a></li>
-          <li><a href="resources.html">Resources</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-        </ul>
-      </div>
-      <div>
-        <strong>Legal</strong>
-        <ul>
-          <li><a href="terms.html">Terms</a></li>
-          <li><a href="privacy.html">Privacy</a></li>
-          <li><a href="responsible-use.html">Responsible Use</a></li>
-        </ul>
-      </div>
-      <div>
-        <strong>Contact</strong>
-        <ul>
-          <li><a href="contact.html">Contact form</a></li>
-          <li><a href="mailto:enquiries@hacking101.com.au">Email us</a></li>
-        </ul>
-      </div>
+      <div><strong>Hacking<span class="accent">101</span></strong><p>Australian Cyber Security Academy Pty Ltd<br/>enquiries@hacking101.com.au<br/>+61 60 626 8545</p><div class="footer-insurance">&#128274; $10M Audited Cyber Liability</div></div>
+      <div><strong>Programmes</strong><ul class="footer-links"><li><a href="courses.html">Courses</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="videos.html">Briefings</a></li><li><a href="resources.html">Resources</a></li><li><a href="status.html">System Status</a></li></ul></div>
+      <div><strong>Company</strong><ul class="footer-links"><li><a href="about.html">About</a></li><li><a href="advisors.html">Advisory Board</a></li><li><a href="alumni.html">Alumni</a></li><li><a href="transparency.html">Transparency</a></li><li><a href="ctf-leaderboard.html">CTF Leaderboard</a></li></ul></div>
+      <div><strong>Legal</strong><ul class="footer-links"><li><a href="terms.html">Terms</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="responsible-use.html">Responsible Use</a></li><li><a href="contact.html">Contact</a></li><li><a href="#">Verify Certificate</a></li></ul></div>
     </div>
-    <div class="container legal-line">
-      <small>&copy; Hacking101 Academy. Use skills responsibly. Unauthorised access is a criminal offence.</small>
-        <p class="muted" style="font-size:.78rem;margin-top:4px">Hosted in secure AU-East datacentres · ABN on file · Australian Cyber Security Academy Pty Ltd</p>
+    <div class="container footer-bottom">
+      <div class="legal"><span>&copy; 2026 Hacking101 Academy. Use skills responsibly. Unauthorised access is a criminal offence.</span></div>
+      <div class="legal"><span>Australian Cyber Security Academy Pty Ltd</span></div>
     </div>
+    <div class="container" style="margin-top:12px"><span class="footer-aueast">&#127970; Hosted in secure AU-East datacentres · ABN on file · Australian Cyber Security Academy Pty Ltd</span></div>
   </footer>
-
-  <script src="assets/main.js"></script>
+  <script src="assets/main.js" defer></script>
 </body>
 </html>

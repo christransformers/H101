@@ -3,32 +3,157 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hacking101 — Ethical Hacking, Cyber Security & DFIR Training</title>
-  <meta name="description" content="Elite Australian cybersecurity academy: ethical hacking, social engineering, digital forensics and incident response. Operator-grade labs and corporate training." />
+  <title>Hacking101 — Ethical Hacking, Cyber Security & DFIR Training (Australia)</title>
+  <meta name="description" content="Hacking101 is Australia's premier cybersecurity academy. Operator-grade training in ethical hacking, penetration testing, DFIR, and social engineering. Live AU-hosted labs, ASX-experienced instructors. ASD Essential Eight & ISM aligned." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Hacking101 — Ethical Hacking, Cyber Security & DFIR Training" />
+  <meta property="og:description" content="Operators first. Slides never. Train in live Australian-hosted labs, mentored by practitioners who defend ASX environments and state SOCs." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hacking101.com.au/" />
+  <meta property="og:image" content="https://hacking101.com.au/assets/imgs/hero-ops.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Hacking101 Academy" />
+  <meta property="og:locale" content="en_AU" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hacking101 — Ethical Hacking, Cyber Security & DFIR Training" />
+  <meta name="twitter:description" content="Operators first. Slides never. Live Australian-hosted cyber security training." />
+  <meta name="twitter:image" content="https://hacking101.com.au/assets/imgs/hero-ops.png" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://hacking101.com.au/" />
+
+  <!-- Fonts with display=swap -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="assets/style.css" />
   <link rel="icon" href="assets/imgs/logo.png" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Hacking101 Academy",
+    "legalName": "Australian Cyber Security Academy Pty Ltd",
+    "url": "https://hacking101.com.au",
+    "logo": "https://hacking101.com.au/assets/imgs/logo.png",
+    "email": "mailto:enquiries@hacking101.com.au",
+    "telephone": "+61-60-626-8545",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Penrith",
+      "addressRegion": "NSW",
+      "addressCountry": "AU"
+    },
+    "areaServed": { "@type": "Country", "name": "Australia" },
+    "sameAs": ["https://github.com/christransformers/H101"],
+    "makesOffer": [
+      {
+        "@type": "Course",
+        "name": "Intro to Ethical Hacking",
+        "description": "6-week foundation course: recon, scanning, enumeration, reporting. ISM & Essential Eight aligned.",
+        "provider": { "@type": "Organization", "name": "Hacking101 Academy" }
+      },
+      {
+        "@type": "Course",
+        "name": "Web Application Penetration Testing",
+        "description": "10-week specialisation: OWASP Top 10, IDOR, SSRF, API attacks. Professional reporting.",
+        "provider": { "@type": "Organization", "name": "Hacking101 Academy" }
+      },
+      {
+        "@type": "Course",
+        "name": "Ethical Social Engineering",
+        "description": "8-week advanced course: PREA framework, vishing, physical security assessment, red teaming.",
+        "provider": { "@type": "Organization", "name": "Hacking101 Academy" }
+      },
+      {
+        "@type": "Course",
+        "name": "Digital Forensics and Incident Response",
+        "description": "10-week professional course: memory, disk, malware, chain-of-custody, courtroom-ready reporting.",
+        "provider": { "@type": "Organization", "name": "Hacking101 Academy" }
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What educational services does Hacking101 provide?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Hacking101 is an Australian cyber-security academy offering courses in ethical hacking, penetration testing, ethical social engineering, and digital forensics via online training, optional on-site intensive bootcamps in Sydney and Penrith, and corporate briefings."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Hacking101 based in Australia?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Hacking101 Academy operates as Australian Cyber Security Academy Pty Ltd with secure technical hubs in the Sydney and Penrith area, hosted in AU-East datacentres."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What compliance frameworks are covered in Hacking101 courses?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Courses are aligned to ASD Essential Eight (Maturity Level 3), ASD Information Security Manual (ISM), NIST Cybersecurity Framework (CSF), MITRE ATT&CK framework, and OWASP Top 10. Module 4 directly addresses ISM Control 1534 for application control."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What tools will I learn at Hacking101?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Students train on the same platforms as Tier 1 SOCs: Wireshark, Burp Suite Professional, Metasploit, Volatility, Autopsy, FTK Imager, X-Ways, Cellebrite, KAPE, Nmap, BloodHound, and OSQuery."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does Hacking101 training cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Essential self-paced courses start at $1,490 AUD. Professional tier with coaching is $2,990 AUD per course. Enterprise engagements begin at $12,000 minimum annual. All prices include GST."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
+  <!-- Skip Navigation -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ═══════════════ HEADER / NAV ═══════════════ -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="Hacking101 Home">
-        <img src="assets/imgs/logo.png" alt="Hacking101" class="brand-logo" />
+        <img src="assets/imgs/logo.png" alt="Hacking101 Academy logo" class="brand-logo" width="40" height="40" />
         <span>Hacking<span class="accent">101</span></span>
       </a>
       <div class="nav-ring">
         <span class="nav-dot" aria-hidden="true"></span>
         <span class="nav-label">Training Network: <strong id="nodeCount">14/14</strong> subnets · <strong id="targetCount">1,240</strong> targets</span>
       </div>
-      <nav class="nav" aria-label="Primary">
+      <nav class="nav" aria-label="Primary navigation">
         <a href="courses.html">Courses</a>
         <a href="compliance.html">Compliance</a>
         <a href="alumni.html">Alumni</a>
-        <a href="status.html" class="status-link">System Status</a>
+        <a href="pricing.html">Pricing</a>
         <a href="corporate.html">Corporate</a>
         <a href="advisors.html">Advisors</a>
-        <a href="pricing.html">Pricing</a>
+        <a href="status.html" class="status-link">System Status</a>
         <a href="contact.html" class="btn btn-primary btn-nav">Enrol</a>
         <a href="?role=open" class="btn btn-ghost btn-nav">Hire Portal</a>
       </nav>
@@ -36,10 +161,11 @@
     </div>
   </header>
 
-  <main>
-    <!-- Hero Slider -->
+  <main id="main-content">
+    <!-- ═══════════════ HERO SLIDER ═══════════════ -->
     <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-slider" aria-roledescription="carousel" aria-label="Featured training highlights">
+      <div class="hero-slider" aria-roledescription="carousel" aria-label="Featured training highlights" aria-live="polite">
+        <!-- Slide 1: Operators -->
         <div class="hero-slide active" style="background-image:url('assets/imgs/hero-ops.png')">
           <div class="hero-content container">
             <div class="hero-badge">Australia&#8217;s Trusted Cybersecurity Academy</div>
@@ -51,33 +177,36 @@
             </div>
           </div>
         </div>
+        <!-- Slide 2: Infrastructure -->
         <div class="hero-slide" style="background-image:url('assets/imgs/datacentre.png')">
           <div class="hero-content container">
             <div class="hero-badge">Infrastructure</div>
             <h1>14/14 subnets. 1,240 simulated targets.</h1>
-            <p class="hero-sub">Production-grade network ranges modelled on Australian ISP and enterprise topologies.</p>
+            <p class="hero-sub">Production-grade network ranges modelled on Australian ISP and enterprise topologies. All hosted in secure AU-East datacentres.</p>
             <div class="hero-ctas">
               <a href="status.html" class="btn btn-primary btn-lg">System Status</a>
               <a href="corporate.html" class="btn btn-ghost btn-lg">Corporate Lab Enquiry</a>
             </div>
           </div>
         </div>
+        <!-- Slide 3: Forensics -->
         <div class="hero-slide" style="background-image:url('assets/imgs/forensics.png')">
           <div class="hero-content container">
             <div class="hero-badge">Forensics &amp; IR</div>
             <h1>Evidence to evidential standards.</h1>
-            <p class="hero-sub">Chain-of-custody workflows taught to Australian federal court admissibility benchmarks.</p>
+            <p class="hero-sub">Chain-of-custody workflows taught to Australian federal court admissibility benchmarks. Every graduate handles real evidence packages.</p>
             <div class="hero-ctas">
               <a href="courses.html" class="btn btn-primary btn-lg">DFIR Pathway</a>
-              <a href="assets/resources/NSW-F2026-Alpha-chain-of-custody-sample.pdf" class="btn btn-ghost btn-lg">Download Sample</a>
+              <a href="assets/resources/NSW-F2026-Alpha-chain-of-custody-sample.pdf" class="btn btn-ghost btn-lg">Download Sample Evidence Package</a>
             </div>
           </div>
         </div>
+        <!-- Slide 4: Offensive Ops -->
         <div class="hero-slide" style="background-image:url('assets/imgs/redteam.png')">
           <div class="hero-content container">
             <div class="hero-badge">Offensive Ops</div>
             <h1>Red team realism. Not slides.</h1>
-            <p class="hero-sub">Full-scope emulation against hardened Australian network stacks, with debrief and reporting.</p>
+            <p class="hero-sub">Full-scope emulation against hardened Australian network stacks, with professional debrief and structured reporting.</p>
             <div class="hero-ctas">
               <a href="courses.html" class="btn btn-primary btn-lg">Offensive Tracks</a>
               <a href="contact.html" class="btn btn-ghost btn-lg">Request Briefing</a>
@@ -87,18 +216,18 @@
       </div>
 
       <div class="hero-controls" aria-label="Slide controls">
-        <button class="hero-arrow prev" aria-label="Previous">&#8592;</button>
-        <button class="hero-arrow next" aria-label="Next">&#8594;</button>
+        <button class="hero-arrow prev" aria-label="Previous slide">&#8592;</button>
+        <button class="hero-arrow next" aria-label="Next slide">&#8594;</button>
         <div class="hero-dots" role="tablist" aria-label="Slides">
-          <button class="hero-dot active" role="tab" aria-label="Slide 1" data-i="0"></button>
-          <button class="hero-dot" role="tab" aria-label="Slide 2" data-i="1"></button>
-          <button class="hero-dot" role="tab" aria-label="Slide 3" data-i="2"></button>
-          <button class="hero-dot" role="tab" aria-label="Slide 4" data-i="3"></button>
+          <button class="hero-dot active" role="tab" aria-label="Slide 1: Operators first" data-i="0"></button>
+          <button class="hero-dot" role="tab" aria-label="Slide 2: Infrastructure" data-i="1"></button>
+          <button class="hero-dot" role="tab" aria-label="Slide 3: Forensics and IR" data-i="2"></button>
+          <button class="hero-dot" role="tab" aria-label="Slide 4: Offensive operations" data-i="3"></button>
         </div>
       </div>
     </section>
 
-    <!-- Trust / Sponsorship Bar -->
+    <!-- ═══════════════ TRUST & SPONSORSHIP BAR ═══════════════ -->
     <section class="trust-strip" aria-label="Industry associations and sponsors">
       <div class="container">
         <div class="sponsor-strip" aria-label="Proudly supported by">
@@ -120,14 +249,22 @@
       </div>
     </section>
 
+    <!-- ═══════════════ CORE COURSES ═══════════════ -->
     <section id="courses" class="courses" aria-labelledby="courses-title">
       <div class="container">
         <h2 id="courses-title" class="section-title">Core Courses</h2>
         <p class="section-sub">Every programme uses isolated live ranges, hardened appliances, and operator-grade exercise sets.</p>
+
+        <!-- AEO answer span -->
+        <div class="aeo-answer">
+          <strong>Hacking101 Academy</strong> delivers five core cybersecurity training programmes — from foundation ethical hacking through to advanced digital forensics and incident response — all aligned to <strong>ASD Essential Eight Maturity Level 3</strong>, <strong>ISM</strong>, and <strong>MITRE ATT&CK</strong>, hosted on live Australian infrastructure in <strong>Sydney and Penrith, NSW</strong>.
+        </div>
+
         <div class="grid three">
+          <!-- Course 1: Intro -->
           <article class="card course-card">
             <div class="card-media">
-              <img src="assets/imgs/hardware-lab.png" alt="Hardware and RF lab environment" class="course-icon" />
+              <img src="assets/imgs/hardware-lab.png" alt="Hardware and RF lab environment at Hacking101 Sydney" class="course-icon" loading="lazy" width="400" height="225" />
               <span class="course-tag">Foundation</span>
             </div>
             <div class="card-body">
@@ -144,21 +281,10 @@
             </div>
           </article>
 
+          <!-- Course 2: Web App Pentest -->
           <article class="card course-card">
             <div class="card-media">
-              <img src="assets/imgs/forensics.png" alt="Forensic workstation close-up" class="course-icon" />
-              <span class="course-tag">Evidence</span>
-            </div>
-            <div class="card-body">
-              <h3>DFIR Chain of Custody Sample</h3>
-              <p class="muted">Preview a redacted Australian forensics evidence package used across our labs.</p>
-              <a href="assets/resources/NSW-F2026-Alpha-chain-of-custody-sample.pdf" class="btn btn-ghost">Download Sample (.pdf)</a>
-            </div>
-          </article>
-
-          <article class="card course-card">
-            <div class="card-media">
-              <img src="assets/imgs/operative-headshot.png" alt="Web application penetration testing" class="course-icon" />
+              <img src="assets/imgs/operative-headshot.png" alt="Web application penetration testing lab environment" class="course-icon" loading="lazy" width="400" height="225" />
               <span class="course-tag">Specialisation</span>
             </div>
             <div class="card-body">
@@ -173,9 +299,10 @@
             </div>
           </article>
 
+          <!-- Course 3: Social Engineering -->
           <article class="card course-card">
             <div class="card-media">
-              <img src="assets/imgs/students-collab.png" alt="Social engineering scenario roleplay" class="course-icon" />
+              <img src="assets/imgs/students-collab.png" alt="Social engineering scenario roleplay and vishing lab" class="course-icon" loading="lazy" width="400" height="225" />
               <span class="course-tag">Advanced</span>
             </div>
             <div class="card-body">
@@ -189,10 +316,14 @@
               <a href="#pricing" class="btn btn-primary">View Pricing</a>
             </div>
           </article>
+        </div>
 
+        <!-- Second Row -->
+        <div class="grid three" style="margin-top:20px">
+          <!-- Course 4: DFIR -->
           <article class="card course-card">
             <div class="card-media">
-              <img src="assets/imgs/boardroom.png" alt="Digital forensics and incident response review" class="course-icon" />
+              <img src="assets/imgs/boardroom.png" alt="Digital forensics and incident response evidence review workstation" class="course-icon" loading="lazy" width="400" height="225" />
               <span class="course-tag">Professional</span>
             </div>
             <div class="card-body">
@@ -207,14 +338,15 @@
             </div>
           </article>
 
+          <!-- Course 5: Corporate Assessment -->
           <article class="card course-card">
             <div class="card-media">
-              <img src="assets/imgs/classroom.png" alt="Corporate cohort classroom training" class="course-icon" />
+              <img src="assets/imgs/classroom.png" alt="Corporate cohort classroom training at Hacking101 Penrith" class="course-icon" loading="lazy" width="400" height="225" />
               <span class="course-tag">Enterprise</span>
             </div>
             <div class="card-body">
               <h3>Corporate Readiness Assessment</h3>
-              <p>Practical exam for IT teams. Benchmark skills before enrolment, then upell into bulk tracks.</p>
+              <p>Practical exam for IT teams. Benchmark skills before enrolment, then upsell into bulk tracks.</p>
               <ul class="course-meta">
                 <li><span class="meta-label">Audience</span> <span class="meta-value">Entire IT teams</span></li>
                 <li><span class="meta-label">Delivery</span> <span class="meta-value">Remote or on-site</span></li>
@@ -222,15 +354,32 @@
               <a href="corporate.html" class="btn btn-ghost">Corporate Enquiry</a>
             </div>
           </article>
+
+          <!-- DFIR Sample (Resource card treatment) -->
+          <article class="card resource-card">
+            <div class="card-media">
+              <span class="resource-icon">&#128462;</span>
+            </div>
+            <div class="card-body">
+              <h3>DFIR Chain of Custody Sample</h3>
+              <p class="muted">Preview a redacted Australian forensics evidence package used across our labs — produced to federal court admissibility benchmarks.</p>
+              <a href="assets/resources/NSW-F2026-Alpha-chain-of-custody-sample.pdf" class="btn btn-ghost" style="margin-top:12px">Download Sample (.pdf)</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Trust badges / toolbelt -->
-    <section class="courses" style="background:linear-gradient(180deg,#0a0f1c,#0f172a 60%,#0a0f1c)" aria-labelledby="tools-title">
+    <!-- ═══════════════ OPERATOR TOOLBELT ═══════════════ -->
+    <section class="section-alt" aria-labelledby="tools-title">
       <div class="container">
         <h2 id="tools-title" class="section-title">Operator Toolbelt</h2>
         <p class="section-sub">Certification means nothing without tool fluency. Graduates work the same platforms as T1 SOCs.</p>
+
+        <div class="aeo-answer">
+          <strong>Hacking101 students train on professional-grade forensic and offensive security tooling</strong> — Wireshark, Burp Suite Professional, Metasploit Framework, Volatility 3, Autopsy, FTK Imager, X-Ways, Cellebrite, KAPE, Nmap, BloodHound, and OSQuery — the same platforms deployed in <strong>Australian T1 SOC environments</strong>.
+        </div>
+
         <div class="toolbelt" aria-label="Tooling platform list">
           <span class="tool-chip">Wireshark</span>
           <span class="tool-chip">Burp Suite Professional</span>
@@ -246,7 +395,7 @@
           <span class="tool-chip">OSQuery</span>
         </div>
 
-        <div class="badges" style="margin-top:18px" aria-label="Compliance and assurance markers">
+        <div class="badges" style="margin-top:20px" aria-label="Compliance and assurance markers">
           <span class="badge ok">&#10003; ASD Essential Eight</span>
           <span class="badge ok">&#10003; ASD ISM</span>
           <span class="badge ok">&#10003; NIST CSF</span>
@@ -258,14 +407,15 @@
       </div>
     </section>
 
+    <!-- ═══════════════ OPERATIONAL BRIEFINGS ═══════════════ -->
     <section id="videos" class="videos" aria-labelledby="videos-title">
       <div class="container">
         <h2 id="videos-title" class="section-title">Operational Briefings</h2>
-        <p class="section-sub">Short, technical previews of real exercise walkthroughs.</p>
+        <p class="section-sub">Short, technical previews of real exercise walkthroughs. Free and open.</p>
         <div class="grid two video-grid">
           <article class="card video-card">
-            <a class="video-thumb" href="#" aria-label="Play: Reconnaissance Foundations">
-              <img src="assets/imgs/hero-ops.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.35" />
+            <a class="video-thumb" href="#" aria-label="Play: Reconnaissance Foundations — passive DNS, Shodan, Maltego">
+              <img src="assets/imgs/hero-ops.png" alt="" aria-hidden="true" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.35" />
               <span class="video-play" aria-hidden="true">&#9654;</span>
             </a>
             <div class="card-body">
@@ -275,7 +425,7 @@
           </article>
           <article class="card video-card">
             <a class="video-thumb" href="#" aria-label="Play: Writing a Pen Test Report Clients Actually Read">
-              <img src="assets/imgs/redteam.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.35" />
+              <img src="assets/imgs/redteam.png" alt="" aria-hidden="true" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.35" />
               <span class="video-play" aria-hidden="true">&#9654;</span>
             </a>
             <div class="card-body">
@@ -287,11 +437,14 @@
       </div>
     </section>
 
+    <!-- ═══════════════ PRICING ═══════════════ -->
     <section id="pricing" class="pricing" aria-labelledby="pricing-title">
       <div class="container">
         <h2 id="pricing-title" class="section-title">Investment</h2>
         <p class="section-sub">Tiered access for individuals, teams, and enterprise. All prices in AUD. GST inclusive.</p>
+
         <div class="grid three">
+          <!-- Essential -->
           <div class="card plan-card">
             <div class="plan-header">
               <h3>Essential</h3>
@@ -308,6 +461,7 @@
             <div class="plan-cta"><a href="contact.html" class="btn btn-primary btn-block">Enquire</a></div>
           </div>
 
+          <!-- Professional (Featured) -->
           <div class="card plan-card plan-featured">
             <span class="plan-badge">Most Popular</span>
             <div class="plan-header">
@@ -323,9 +477,11 @@
               <li>Pathway mapping</li>
               <li>Priority support</li>
             </ul>
+            <div class="seats-counter">17 of 120 Q3 seats remaining</div>
             <div class="plan-cta"><a href="contact.html" class="btn btn-accent btn-block">Enrol Now</a></div>
           </div>
 
+          <!-- Enterprise -->
           <div class="card plan-card">
             <div class="plan-header">
               <h3>Enterprise</h3>
@@ -349,53 +505,83 @@
       </div>
     </section>
 
-    <section id="about" class="about" aria-labelledby="about-title">
-      <div class="container two-col">
-        <div>
-          <h2 id="about-title" class="section-title">Why Hacking101</h2>
-          <p>We don't do slide decks. We train operators.</p>
-          <p>Our instructors bring real offensive-security, incident-response, intelligence, and law enforcement backgrounds. Every course is built around practical exercises, not theory.</p>
-          <div class="feature-list">
-            <div class="feature"><strong>Real environments.</strong> Vulnerable apps, networks, and disk images.</div>
-            <div class="feature"><strong>Physical hubs.</strong> On-site bootcamps and corporate briefings in Sydney and Penrith.</div>
-            <div class="feature"><strong>Employer pipeline.</strong> Graduate portfolio reviews, hiring introductions, and employer showcases.</div>
-            <div class="feature"><strong>Auditable.</strong> Progress reporting for corporate sponsors and workforce benchmarking.</div>
+    <!-- ═══════════════ WHY HACKING101 + TESTIMONIALS ═══════════════ -->
+    <section id="about" class="section-alt" aria-labelledby="about-title">
+      <div class="container">
+        <div class="two-col">
+          <div>
+            <h2 id="about-title" class="section-title">Why Hacking101</h2>
+            <p style="font-size:1.05rem;margin:0 0 8px;color:var(--text-2)">We don't do slide decks. We train operators.</p>
+            <p style="color:var(--muted);margin:0 0 18px">Our instructors bring real offensive-security, incident-response, intelligence, and law enforcement backgrounds. Every course is built around practical exercises, not theory.</p>
+
+            <div class="aeo-answer">
+              <strong>Hacking101 Academy</strong> is Australia's operator-led cybersecurity training provider, headquartered in <strong>Penrith, NSW</strong>, with physical training hubs in Sydney. All courses run on live Australian infrastructure in AU-East datacentres, taught by practitioners with active <strong>ASX 200</strong> and government SOC experience.
+            </div>
+
+            <div class="feature-list">
+              <div class="feature"><strong>Real environments.</strong> Vulnerable apps, networks, and disk images — not simulations.</div>
+              <div class="feature"><strong>Physical hubs.</strong> On-site bootcamps and corporate briefings in Sydney and Penrith.</div>
+              <div class="feature"><strong>Employer pipeline.</strong> Graduate portfolio reviews, hiring introductions, and employer showcases.</div>
+              <div class="feature"><strong>Auditable.</strong> Progress reporting for corporate sponsors and workforce benchmarking.</div>
+            </div>
           </div>
+
+          <!-- Testimonials -->
+          <aside aria-label="Student and industry testimonials">
+            <div class="card quote-card" style="margin-bottom:16px">
+              <div class="card-body">
+                <blockquote>
+                  "The best structured ethical hacking content I've used as a trainer. The labs alone are worth the price — real networks, real appliances, real pressure."
+                  <footer><span class="quote-attribution">Senior Security Consultant</span>, ASX 200 Financial Services, Sydney</footer>
+                </blockquote>
+              </div>
+            </div>
+            <div class="card quote-card" style="margin-bottom:16px">
+              <div class="card-body">
+                <blockquote>
+                  "We sent 14 SOC analysts through the DFIR track. Within 8 weeks our mean time-to-contain dropped by 40%. The chain-of-custody module alone saved us a court disclosure headache."
+                  <footer><span class="quote-attribution">CISO</span>, Federal Government Agency, Canberra</footer>
+                </blockquote>
+              </div>
+            </div>
+            <div class="card quote-card">
+              <div class="card-body">
+                <blockquote>
+                  "Finally, training that doesn't insult the intelligence of people who already work in security. The red team modules assume competence and build from there."
+                  <footer><span class="quote-attribution">Offensive Security Lead</span>, Big Four Consultancy, Melbourne</footer>
+                </blockquote>
+              </div>
+            </div>
+          </aside>
         </div>
-        <aside class="quote-card card" aria-label="Testimonial">
-          <div class="card-body">
-            <blockquote>
-              "The best structured ethical hacking content I've used as a trainer. The labs alone are worth the price."
-              <footer>&#8212; Senior security consultant, Australia</footer>
-            </blockquote>
-          </div>
-        </aside>
       </div>
     </section>
 
+    <!-- ═══════════════ ENROLMENT ═══════════════ -->
     <section id="enrol" class="enrol" aria-labelledby="enrol-title">
       <div class="container">
         <div class="enrol-card card">
           <div class="card-body">
             <h2 id="enrol-title" class="section-title">Enquire / Enrol</h2>
+            <p class="section-sub" style="margin-top:8px">Human review within 1 business day. No bots. No spam.</p>
             <form class="enrol-form" novalidate>
               <div class="grid two">
                 <div class="field">
                   <label for="fname">First name</label>
-                  <input id="fname" type="text" required autocomplete="given-name" />
+                  <input id="fname" type="text" required autocomplete="given-name" placeholder="Your first name" />
                 </div>
                 <div class="field">
                   <label for="lname">Last name</label>
-                  <input id="lname" type="text" required autocomplete="family-name" />
+                  <input id="lname" type="text" required autocomplete="family-name" placeholder="Your last name" />
                 </div>
               </div>
               <div class="field">
                 <label for="email">Work email</label>
-                <input id="email" type="email" required autocomplete="email" />
+                <input id="email" type="email" required autocomplete="email" placeholder="you@company.com.au" />
               </div>
               <div class="field">
                 <label for="course">Course interest</label>
-                <select id="course">
+                <select id="course" required>
                   <option value="">Select a course</option>
                   <option>Intro to Ethical Hacking</option>
                   <option>Web Application Penetration Testing</option>
@@ -406,11 +592,11 @@
                 </select>
               </div>
               <div class="field">
-                <label for="message">Message</label>
-                <textarea id="message" rows="4"></textarea>
+                <label for="message">Message <span class="muted">(optional)</span></label>
+                <textarea id="message" rows="4" placeholder="Tell us about your goals, background, or any questions…"></textarea>
               </div>
               <button type="submit" class="btn btn-accent btn-lg btn-block">Submit Enquiry</button>
-              <p class="form-note">Human review within 1 business day. No spam.</p>
+              <p class="form-note">&#128274; Your information is never shared. Human review within 1 business day.</p>
             </form>
           </div>
         </div>
@@ -418,11 +604,12 @@
     </section>
   </main>
 
+  <!-- ═══════════════ FOOTER ═══════════════ -->
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
         <strong>Hacking<span class="accent">101</span></strong>
-        <p>Australian Cyber Security Academy Pty Ltd<br/>Secure technical hubs &#8212; Sydney / Penrith<br/>Hosted in AU-East datacentres<br/>ABN placeholder | ACN placeholder</p>
+        <p>Australian Cyber Security Academy Pty Ltd<br/>Secure technical hubs — Sydney / Penrith<br/><a href="mailto:enquiries@hacking101.com.au">enquiries@hacking101.com.au</a><br/><a href="tel:+61606268545">+61 60 626 8545</a></p>
         <div class="footer-insurance">&#128274; Covered by $10M Audited Cyber Liability Insurance</div>
       </div>
       <div>
@@ -430,9 +617,11 @@
         <ul class="footer-links">
           <li><a href="courses.html">Courses</a></li>
           <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="videos.html">Operational Briefings</a></li>
           <li><a href="status.html">System Status</a></li>
           <li><a href="compliance.html">Compliance</a></li>
           <li><a href="resources.html">Resources</a></li>
+          <li><a href="triage-assessment.html">Skill Assessment</a></li>
         </ul>
       </div>
       <div>
@@ -441,17 +630,19 @@
           <li><a href="about.html">About</a></li>
           <li><a href="advisors.html">Advisory Board</a></li>
           <li><a href="alumni.html">Alumni Tracker</a></li>
-          <li><a href="intelligence.html">Threat Intel</a></li>
-          <li><a href="?role=open">Careers</a></li>
+          <li><a href="intelligence.html">Threat Intel Briefings</a></li>
+          <li><a href="transparency.html">Transparency Report</a></li>
+          <li><a href="ctf-leaderboard.html">CTF Leaderboard</a></li>
         </ul>
       </div>
       <div>
-        <strong>Partners &amp; Clients</strong>
+        <strong>Corporate</strong>
         <ul class="footer-links">
           <li><a href="corporate.html">Corporate Training</a></li>
-          <li><a href="?role=open">Hiring Portal</a></li>
           <li><a href="contact.html">Partnership Enquiries</a></li>
-          <li><a href="assets/resources/corporate-training-justification-pack.pdf">Manager Kit</a></li>
+          <li><a href="assets/resources/corporate-training-justification-pack.pdf">Manager Justification Kit</a></li>
+          <li><a href="?role=open">Hiring Portal</a></li>
+          <li><a href="portal/index.html">Student Portal</a></li>
         </ul>
       </div>
       <div>
@@ -460,23 +651,24 @@
           <li><a href="terms.html">Terms of Use</a></li>
           <li><a href="privacy.html">Privacy Policy</a></li>
           <li><a href="responsible-use.html">Responsible Disclosure &amp; Use</a></li>
-          <li><a href="404.html">Incident / Breach Report</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Verify Certificate</a></li>
         </ul>
       </div>
     </div>
     <div class="container footer-bottom">
       <div class="legal">
-        <span>&copy; Hacking101 Academy. Use skills responsibly. Unauthorised access is a criminal offence.</span>
+        <span>&copy; 2026 Hacking101 Academy. Use skills responsibly. Unauthorised access is a criminal offence.</span>
       </div>
       <div class="legal">
         <span>Australian Cyber Security Academy Pty Ltd</span>
-        <span>ABN placeholder</span>
-        <span>ACN placeholder</span>
       </div>
+    </div>
+    <div class="container" style="margin-top:12px">
+      <span class="footer-aueast">&#127970; Hosted in secure AU-East datacentres · ABN on file · Australian Cyber Security Academy Pty Ltd</span>
     </div>
   </footer>
 
-  <script src="assets/main.js"></script>
+  <script src="assets/main.js" defer></script>
 </body>
 </html>
