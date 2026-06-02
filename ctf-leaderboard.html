@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CTF Leaderboard — Hacking101</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-icon" aria-hidden="true">&#128737;</span>
+        <span>Hacking<span class="accent">101</span></span>
+      </a>
+      <div class="nav-ring">
+        <span class="nav-dot" aria-hidden="true"></span>
+        <span class="nav-label">Training Network: <strong>14/14</strong> subnets · <strong>1,240</strong> targets</span>
+      </div>
+      <nav class="nav" aria-label="Primary"><a href="index.html">Home</a></nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="padding:72px 0 88px">
+      <div class="container">
+        <h1>Live CTF / Wargame Ladder</h1>
+        <p class="hero-sub">Recent captures from the academy’s internal red-team and forensics challenges.</p>
+      </div>
+    </section>
+
+    <section class="courses">
+      <div class="container">
+        <div class="card" style="padding:18px;overflow:auto">
+          <table id="ctfTable" style="width:100%;border-collapse:collapse;color:#cfe2ff;font-size:.95rem">
+            <thead>
+              <tr style="border-bottom:1px solid rgba(138,160,191,.18);text-align:left">
+                <th style="padding:10px 8px">Time</th>
+                <th style="padding:10px 8px">User</th>
+                <th style="padding:10px 8px">Challenge</th>
+                <th style="padding:10px 8px">Time to flag</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="muted">just now</td><td><strong>Root_NSW</strong></td><td>Forensic Lab Host 04</td><td>11m 42s</td></tr>
+              <tr><td class="muted">3m ago</td><td><strong>adowSecOps</strong></td><td>Web Exploit Chain 09</td><td>18m 09s</td></tr>
+              <tr><td class="muted">11m ago</td><td><strong>red_team_bris</strong></td><td>Active Directory Abuse</td><td>31m 15s</td></tr>
+              <tr><td class="muted">22m ago</td><td><strong>forensics_kitty</strong></td><td>Memory Dump Analysis</td><td>14m 58s</td></tr>
+              <tr><td class="muted">41m ago</td><td><strong>malware_rev</strong></td><td>Malware Reverse Engineering</td><td>1h 02m</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="muted" style="margin-top:12px">Leaderboard is illustrative for brand positioning. Wire up a real scoring backend when you’re ready.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container legal-line"><small>&copy; Hacking101 Academy.</small></div>
+  </footer>
+  <script src="assets/main.js"></script>
+</body>
+</html>

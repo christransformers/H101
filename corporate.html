@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Corporate Training — Hacking101</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-icon" aria-hidden="true">&#128737;</span>
+        <span>Hacking<span class="accent">101</span></span>
+      </a>
+      <div class="nav-ring">
+        <span class="nav-dot" aria-hidden="true"></span>
+        <span class="nav-label">Training Network: <strong>14/14</strong> subnets · <strong>1,240</strong> targets</span>
+      </div>
+      <nav class="nav" aria-label="Primary"><a href="index.html">Home</a></nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="padding:72px 0 88px">
+      <div class="container">
+        <h1>Corporate Training &amp; Government Cohorts</h1>
+        <p class="hero-sub">Private virtual labs, cohort control, custom curricula, procurement-ready invoices, and vetting-compatible delivery.</p>
+        <div class="hero-ctas">
+          <a href="contact.html" class="btn btn-accent btn-lg">Request Corporate Briefing</a>
+          <a href="contact.html" class="btn btn-ghost btn-lg">Government Enquiries</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="courses">
+      <div class="container">
+        <div class="grid three">
+          <div class="card" style="padding:22px">
+            <h3>Private Lab Staging</h3>
+            <p class="muted">Dedicated environments per cohort, isolated from public students, redeployed weekly.</p>
+          </div>
+          <div class="card" style="padding:22px">
+            <h3>Cohort Sizing</h3>
+            <p class="muted">Seat blocks from 10 to 200. Attendance, progress, and completion dashboards included.</p>
+          </div>
+          <div class="card" style="padding:22px">
+            <h3>Billing &amp; Procurement</h3>
+            <p class="muted">PO, ABN quotes, net terms, and annual licence structures available.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="courses" style="background:linear-gradient(180deg,#0b1220,#0c1322 60%,#0b1220)">
+      <div class="container">
+        <h2 class="section-title">Intake Form</h2>
+        <div class="card enrol-card" style="padding:28px">
+          <form class="enrol-form" novalidate>
+            <div class="grid two">
+              <div class="field"><label for="org">Organisation</label><input id="org" type="text" required /></div>
+              <div class="field"><label for="role">Your Role</label><input id="role" type="text" required /></div>
+            </div>
+            <div class="field"><label for="ocontact">Work email</label><input id="ocontact" type="email" required /></div>
+            <div class="field"><label for="ocohort">Cohort estimate</label><select id="ocohort"><option>10-25</option><option>25-50</option><option>50-100</option><option>100+</option></select></div>
+            <div class="field"><label for="omessage">Requirements</label><textarea id="omessage" rows="5"></textarea></div>
+            <button type="submit" class="btn btn-accent btn-lg btn-block">Submit Enquiry</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container legal-line"><small>&copy; Hacking101 Academy.</small></div>
+  </footer>
+  <script src="assets/main.js"></script>
+</body>
+</html>

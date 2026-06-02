@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zero-Day Open Briefing — Hacking101</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-icon" aria-hidden="true">&#128737;</span>
+        <span>Hacking<span class="accent">101</span></span>
+      </a>
+      <div class="nav-ring">
+        <span class="nav-dot" aria-hidden="true"></span>
+        <span class="nav-label">Training Network: <strong>14/14</strong> subnets · <strong>1,240</strong> targets</span>
+      </div>
+      <nav class="nav" aria-label="Primary"><a href="index.html">Home</a></nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="padding:72px 0 88px">
+      <div class="container">
+        <h1>Open Briefing</h1>
+        <p class="hero-sub">A concise, technical teardown of a current threat affecting Australian infrastructure.</p>
+        <span class="course-tag" style="display:inline-block;margin-bottom:14px">Advisory</span>
+      </div>
+    </section>
+
+    <section class="courses">
+      <div class="container">
+        <div class="card" style="padding:22px">
+          <h2 style="margin-top:0">Sophos Firewall Pre-auth RCE (CVE-2022-3236)</h2>
+          <p class="muted">June 2026 update — remains in CISA KEV; active exploitation observed in Australia.</p>
+          <p>Sophos Firewall v18.5 / v19.0 MR3 and earlier allow unauthenticated remote code execution via crafted HTTP requests to the web-admin portal. Exploitation does not require authentication, valid sessions, or user interaction. Successful exploitation results in OS-level command execution as the <code>root</code> equivalent service account.</p>
+          <p>The vulnerability is triggered through a stack-based buffer overflow in the <code>cef</code> component due to improper bounds checking prior to HTTP response parsing. Exploit kits and PoC scripts are publicly available. Patch to v19.0.4 or later, and ensure the web-admin interface is not Internet-facing.</p>
+          <p><strong>Australian exposure:</strong> ACSC has previously published advisory guidance for Sophos Firewall. Any Australia-facing appliance still on the affected branch should be treated as a mandatory patching priority.</p>
+          <p class="muted">This briefing is for authorised educational use only. Unauthorised testing is a criminal offence.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container legal-line"><small>&copy; Hacking101 Academy. Content is illustrative and subject to change.</small></div>
+  </footer>
+  <script src="assets/main.js"></script>
+</body>
+</html>

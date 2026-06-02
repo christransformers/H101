@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>System Status — Hacking101</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-icon" aria-hidden="true">&#128737;</span>
+        <span>Hacking<span class="accent">101</span></span>
+      </a>
+      <div class="nav-ring">
+        <span class="nav-dot" aria-hidden="true"></span>
+        <span class="nav-label">Training Network: <strong>14/14</strong> subnets · <strong>1,240</strong> targets</span>
+      </div>
+      <nav class="nav" aria-label="Primary"><a href="index.html">Home</a></nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="padding:72px 0 88px">
+      <div class="container">
+        <h1>Training Environment Status</h1>
+        <p class="hero-sub">We run a distributed, Australian-hosted lab fabric with live offensive and defensive nodes — not pre-recorded demos.</p>
+        <div class="system-status" aria-label="Lab environment status">
+          <span class="status-pill">LIVE</span>
+          <span>Network health: <strong>14/14</strong> subnets online · <strong>1,240</strong> simulated targets deployed · last sync <span id="lastSync">just now</span></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="courses">
+      <div class="container">
+        <div class="grid three">
+          <div class="card" style="padding:18px">
+            <h3>Offensive Nodes</h3>
+            <p class="muted">Kali, Parrot, custom Windows attack ranges, and mobile lab endpoints.</p>
+            <p><strong>8/8</strong> online</p>
+          </div>
+          <div class="card" style="padding:18px">
+            <h3>Defensive Nodes</h3>
+            <p class="muted">SIEM, EDR, IDS/IPS, and SOC workstations with real telemetry.</p>
+            <p><strong>4/4</strong> online</p>
+          </div>
+          <div class="card" style="padding:18px">
+            <h3>Target Environment</h3>
+            <p class="muted">OWASP Juice Shop, DVWA, blueprints, vulnerable DC, and IR datasets.</p>
+            <p><strong>1,240</strong> active targets</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="courses" style="background:linear-gradient(180deg,#0b1220,#0c1322 60%,#0b1220)">
+      <div class="container">
+        <h2 class="section-title">Network Load</h2>
+        <div class="grid two">
+          <div class="card" style="padding:18px">
+            <p><strong>Concurrent student sessions:</strong> 186</p>
+            <p><strong>Lab API latency:</strong> 21ms</p>
+            <p><strong>Failure rate (24h):</strong> 0.02%</p>
+          </div>
+          <div class="card" style="padding:18px">
+            <p><strong>Target rebuilds today:</strong> 9,214</p>
+            <p><strong>Snapshot restores:</strong> 443</p>
+            <p><strong>Forensic evidence packs:</strong> 128</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container legal-line"><small>&copy; Hacking101 Academy. Status indicative. Infrastructure data shown is simulated for illustrative purposes.</small></div>
+  </footer>
+  <script src="assets/main.js"></script>
+</body>
+</html>

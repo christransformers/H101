@@ -44,13 +44,19 @@ ul{padding-left:0;list-style:none}
 
 /* Header */
 .site-header{position:sticky;top:0;z-index:50;background:rgba(11,18,32,.72);backdrop-filter:saturate(140%) blur(14px);border-bottom:1px solid var(--line)}
-.header-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
-.brand{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:1.05rem}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:auto;padding:12px 0;gap:16px}
+.brand{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:1.05rem;white-space:nowrap}
 .brand-icon{font-size:1.1rem}
 .nav{display:flex;align-items:center;gap:18px}
 .nav a{color:#cfe2ff;font-weight:500}
 .nav a:hover{color:#fff}
+.status-link{color:#7dd3fc}
+.nav-ring{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.025);border:1px solid var(--line);border-radius:999px;padding:8px 12px;color:#9fb8d1;font-size:.82rem;font-weight:500;white-space:nowrap}
+.nav-dot{width:8px;height:8px;border-radius:50%;background:#10b981;box-shadow:0 0 0 0 rgba(16,185,129,.7);animation:pulse 2s infinite}
+.nav-label strong{color:#eaf2ff}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(16,185,129,.7)}70%{box-shadow:0 0 0 8px rgba(16,185,129,0)}100%{box-shadow:0 0 0 0 rgba(16,185,129,0)}}
 .menu-toggle{display:none;background:transparent;border:0;color:#cfe2ff;font-size:1.4rem}
+@media(max-width:1100px){.nav-ring{display:none}}
 @media(max-width:820px){
   .nav{display:none}
   .menu-toggle{display:block}
@@ -148,6 +154,13 @@ section+section{border-top:1px solid var(--line)}
 .footer-grid ul{margin-top:6px;display:grid;gap:6px}
 .legal-line{padding-top:22px;margin-top:24px;border-top:1px solid var(--line);color:#6e88a6;text-align:center}
 @media(max-width:860px){.footer-grid{grid-template-columns:1fr 1fr}}
+
+
+/* System Status */
+.system-status{display:inline-flex;align-items:center;gap:10px;margin-top:12px;background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.25);border-radius:999px;padding:10px 14px;color:#cfe2ff;font-size:.95rem}
+.status-pill{background:#10b981;color:#04220a;font-weight:700;font-size:.72rem;padding:6px 10px;border-radius:999px;letter-spacing:.1em;text-transform:uppercase}
+.status-link{color:#7dd3fc;font-weight:600;margin-left:4px}
+.status-link:hover{color:#fff}
 
 
 /* JS */

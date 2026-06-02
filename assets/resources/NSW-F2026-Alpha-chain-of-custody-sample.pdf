@@ -1,0 +1,19 @@
+# Hacking101 Academy — DFIR Sample
+# File: NSW-F2026-Alpha chain-of-custody package (redacted)
+# Purpose: illustrative sample for student intake review
+
+SAMPLE_PACKAGE := {
+  "case_id": "NSW-F2026-Alpha",
+  "offence_class": "Corporate data exfiltration simulation",
+  "jurisdiction": "NSW",
+  "examiner": "Rebecca M.",
+  "certificate_number": "CFCE-XXXX",
+  "artefacts": [
+    "memory.dmp (redacted)",
+    "evidence.E01 (extract)",
+    "timeline.csv",
+    "sha256_checksums.txt"
+  ],
+  "hash_example": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "notes": "Replace with your real sample before public distribution."
+}
