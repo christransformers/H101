@@ -46,6 +46,7 @@ ul{padding-left:0;list-style:none}
 .site-header{position:sticky;top:0;z-index:50;background:rgba(11,18,32,.72);backdrop-filter:saturate(140%) blur(14px);border-bottom:1px solid var(--line)}
 .header-inner{display:flex;align-items:center;justify-content:space-between;height:auto;padding:12px 0;gap:16px}
 .brand{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:1.05rem;white-space:nowrap}
+.brand-logo{height:36px;width:36px;object-fit:contain;display:block}
 .brand-icon{font-size:1.1rem}
 .nav{display:flex;align-items:center;gap:18px}
 .nav a{color:#cfe2ff;font-weight:500}
