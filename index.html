@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hacking101 — Ethical Hacking & Cyber Security Training</title>
-  <meta name="description" content="Enrol in elite ethical hacking, cyber security, ethical social engineering and forensic analysis courses at hacking101.com.au." />
+  <title>Hacking101 — Ethical Hacking, Cyber Security & DFIR Training</title>
+  <meta name="description" content="Elite Australian cybersecurity academy: ethical hacking, social engineering, digital forensics and incident response. Operator-grade labs and corporate training." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" href="assets/imgs/logo.png" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#" aria-label="Hacking101 Home">
-        <img src="assets/imgs/logo.png" alt="Hacking101 logo" class="brand-logo" />
+      <a class="brand" href="index.html" aria-label="Hacking101 Home">
+        <img src="assets/imgs/logo.png" alt="Hacking101" class="brand-logo" />
         <span>Hacking<span class="accent">101</span></span>
       </a>
       <div class="nav-ring">
@@ -24,12 +25,11 @@
         <a href="courses.html">Courses</a>
         <a href="compliance.html">Compliance</a>
         <a href="alumni.html">Alumni</a>
-        <a href="videos.html">Videos</a>
         <a href="status.html" class="status-link">System Status</a>
         <a href="corporate.html">Corporate</a>
+        <a href="advisors.html">Advisors</a>
         <a href="pricing.html">Pricing</a>
         <a href="contact.html" class="btn btn-primary btn-nav">Enrol</a>
-        <a href="advisors.html">Advisors</a>
         <a href="?role=open" class="btn btn-ghost btn-nav">Hire Portal</a>
       </nav>
       <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
@@ -37,30 +37,85 @@
   </header>
 
   <main>
+    <!-- Hero Slider -->
     <section class="hero" aria-labelledby="hero-title">
-      <div class="container">
-        <div class="hero-badge">Australia&#8217;s Trusted Cybersecurity Academy</div>
-        <h1 id="hero-title">Master <span>Ethical Hacking</span>.<br />Master the <span>Digital Battlefield</span>.</h1>
-        <p class="hero-sub">Industry-led courses in ethical hacking, cyber security, social engineering and digital forensics — built for operators, auditors, and defenders who demand real skill.</p>
-        <div class="hero-ctas">
-          <a href="#pricing" class="btn btn-primary btn-lg">View Courses &#8594;</a>
-          <a href="#videos" class="btn btn-ghost btn-lg">Watch Sample</a>
+      <div class="hero-slider" aria-roledescription="carousel" aria-label="Featured training highlights">
+        <div class="hero-slide active" style="background-image:url('assets/imgs/hero-ops.png')">
+          <div class="hero-content container">
+            <div class="hero-badge">Australia&#8217;s Trusted Cybersecurity Academy</div>
+            <h1 id="hero-title">Operators first. Slides never.</h1>
+            <p class="hero-sub">Train in live Australian-hosted labs, mentored by practitioners who defend ASX environments and state SOCs.</p>
+            <div class="hero-ctas">
+              <a href="#courses" class="btn btn-primary btn-lg">Explore Courses &#8594;</a>
+              <a href="#pricing" class="btn btn-ghost btn-lg">View Investment</a>
+            </div>
+          </div>
         </div>
-        <div class="hero-meta">
-          <span>&#11088; 4.9/5 student rating</span>
-          <span>&#128202; 12,000+ students</span>
-          <span>&#128279; Certificate on completion</span>
-          <span>&#128274; Endpoint security aligned</span>
+        <div class="hero-slide" style="background-image:url('assets/imgs/datacentre.png')">
+          <div class="hero-content container">
+            <div class="hero-badge">Infrastructure</div>
+            <h1>14/14 subnets. 1,240 simulated targets.</h1>
+            <p class="hero-sub">Production-grade network ranges modelled on Australian ISP and enterprise topologies.</p>
+            <div class="hero-ctas">
+              <a href="status.html" class="btn btn-primary btn-lg">System Status</a>
+              <a href="corporate.html" class="btn btn-ghost btn-lg">Corporate Lab Enquiry</a>
+            </div>
+          </div>
         </div>
-        <p class="hero-footnote" style="color:#8aa0bf;margin-top:14px;font-size:.92rem">Optional on-site intensive bootcamps, physical hardware-hacking labs, and corporate briefing sessions hosted in our secure technical hubs across the Sydney / Penrith area.</p>
-        <div class="hero-visual" aria-hidden="true" style="margin-top:18px">
-          <img src="assets/imgs/instructor-lab.png" alt="Hacking101 training environment" style="width:100%;max-height:320px;object-fit:cover;border-radius:14px;border:1px solid rgba(255,255,255,.06);box-shadow:0 20px 60px rgba(0,0,0,.35)" />
+        <div class="hero-slide" style="background-image:url('assets/imgs/forensics.png')">
+          <div class="hero-content container">
+            <div class="hero-badge">Forensics &amp; IR</div>
+            <h1>Evidence to evidential standards.</h1>
+            <p class="hero-sub">Chain-of-custody workflows taught to Australian federal court admissibility benchmarks.</p>
+            <div class="hero-ctas">
+              <a href="courses.html" class="btn btn-primary btn-lg">DFIR Pathway</a>
+              <a href="assets/resources/NSW-F2026-Alpha-chain-of-custody-sample.pdf" class="btn btn-ghost btn-lg">Download Sample</a>
+            </div>
+          </div>
         </div>
+        <div class="hero-slide" style="background-image:url('assets/imgs/redteam.png')">
+          <div class="hero-content container">
+            <div class="hero-badge">Offensive Ops</div>
+            <h1>Red team realism. Not slides.</h1>
+            <p class="hero-sub">Full-scope emulation against hardened Australian network stacks, with debrief and reporting.</p>
+            <div class="hero-ctas">
+              <a href="courses.html" class="btn btn-primary btn-lg">Offensive Tracks</a>
+              <a href="contact.html" class="btn btn-ghost btn-lg">Request Briefing</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <div class="system-status" aria-label="Lab environment status">
-          <span class="status-pill">LIVE</span>
-          <span>Training Network Status: <strong id="heroNodeCount">14/14</strong> subnets online · <strong id="heroTargetCount">1,240</strong> simulated targets deployed</span>
-          <a class="status-link" href="status.html">Details</a>
+      <div class="hero-controls" aria-label="Slide controls">
+        <button class="hero-arrow prev" aria-label="Previous">&#8592;</button>
+        <button class="hero-arrow next" aria-label="Next">&#8594;</button>
+        <div class="hero-dots" role="tablist" aria-label="Slides">
+          <button class="hero-dot active" role="tab" aria-label="Slide 1" data-i="0"></button>
+          <button class="hero-dot" role="tab" aria-label="Slide 2" data-i="1"></button>
+          <button class="hero-dot" role="tab" aria-label="Slide 3" data-i="2"></button>
+          <button class="hero-dot" role="tab" aria-label="Slide 4" data-i="3"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust / Sponsorship Bar -->
+    <section class="trust-strip" aria-label="Industry associations and sponsors">
+      <div class="container">
+        <div class="sponsor-strip" aria-label="Proudly supported by">
+          <span class="sponsor-dot"></span>
+          <span>Proud sponsors of the <strong>NSW Youth Cyber Defence Competition 2026</strong></span>
+          <span class="sponsor-dot"></span>
+          <span>Official training partner of <strong>SouthEast Analytics</strong></span>
+          <span class="sponsor-dot"></span>
+          <span>In association with <strong>HarbourSec Advisory</strong></span>
+        </div>
+        <div class="trust-logos" aria-label="Trust and compliance markers">
+          <span><span class="trust-icon">&#128737;</span> ASD Essential Eight</span>
+          <span><span class="trust-icon">&#128188;</span> ISM Aligned</span>
+          <span><span class="trust-icon">&#128161;</span> NIST CSF</span>
+          <span><span class="trust-icon">&#128300;</span> MITRE ATT&amp;CK</span>
+          <span><span class="trust-icon">&#128274;</span> $10M Cyber Liability Cover</span>
+          <span><span class="trust-icon">&#127970;</span> AU-East Datacentres</span>
         </div>
       </div>
     </section>
@@ -68,16 +123,16 @@
     <section id="courses" class="courses" aria-labelledby="courses-title">
       <div class="container">
         <h2 id="courses-title" class="section-title">Core Courses</h2>
-        <p class="section-sub">Each programme is self-contained, practical, and delivered in HD with downloadable labs.</p>
+        <p class="section-sub">Every programme uses isolated live ranges, hardened appliances, and operator-grade exercise sets.</p>
         <div class="grid three">
           <article class="card course-card">
             <div class="card-media">
-              <div class="course-icon"><img src="assets/imgs/instructor-lab.png" alt="Ethical hacking lab" /></div>
+              <img src="assets/imgs/hardware-lab.png" alt="Hardware and RF lab environment" class="course-icon" />
               <span class="course-tag">Foundation</span>
             </div>
             <div class="card-body">
               <h3>Intro to Ethical Hacking</h3>
-              <p>Reconnaissance, scanning, enumeration, and reporting. Build your methodology and legal baseline.</p>
+              <p>Reconnaissance, scanning, enumeration, and reporting with legal baseline and safe-scope rules.</p>
               <ul class="course-meta">
                 <li><span class="meta-label">Duration</span> <span class="meta-value">6 weeks</span></li>
                 <li><span class="meta-label">Level</span> <span class="meta-value">Beginner</span></li>
@@ -86,13 +141,12 @@
                 <li><span class="meta-label">Compliance</span> <span class="meta-value">ISM / Essential Eight</span></li>
               </ul>
               <a href="pricing.html" class="btn btn-primary">View Pricing</a>
-              <a href="assets/resources/NSW-F2026-Alpha-chain-of-custody-sample.pdf" class="btn btn-ghost" style="margin-top:8px">Chain of Custody Sample</a>
             </div>
           </article>
 
           <article class="card course-card">
             <div class="card-media">
-              <div class="course-icon"><img src="assets/imgs/students-collab.png" alt="Forensic sample review" /></div>
+              <img src="assets/imgs/forensics.png" alt="Forensic workstation close-up" class="course-icon" />
               <span class="course-tag">Evidence</span>
             </div>
             <div class="card-body">
@@ -104,7 +158,7 @@
 
           <article class="card course-card">
             <div class="card-media">
-              <div class="course-icon"><img src="assets/imgs/operative-headshot.png" alt="Web app penetration testing" /></div>
+              <img src="assets/imgs/operative-headshot.png" alt="Web application penetration testing" class="course-icon" />
               <span class="course-tag">Specialisation</span>
             </div>
             <div class="card-body">
@@ -121,7 +175,7 @@
 
           <article class="card course-card">
             <div class="card-media">
-              <div class="course-icon"><img src="assets/imgs/instructor-lab.png" alt="Social engineering training" /></div>
+              <img src="assets/imgs/students-collab.png" alt="Social engineering scenario roleplay" class="course-icon" />
               <span class="course-tag">Advanced</span>
             </div>
             <div class="card-body">
@@ -138,7 +192,7 @@
 
           <article class="card course-card">
             <div class="card-media">
-              <div class="course-icon"><img src="assets/imgs/students-collab.png" alt="Digital forensics and incident response" /></div>
+              <img src="assets/imgs/boardroom.png" alt="Digital forensics and incident response review" class="course-icon" />
               <span class="course-tag">Professional</span>
             </div>
             <div class="card-body">
@@ -152,60 +206,81 @@
               <a href="#pricing" class="btn btn-primary">View Pricing</a>
             </div>
           </article>
+
+          <article class="card course-card">
+            <div class="card-media">
+              <img src="assets/imgs/classroom.png" alt="Corporate cohort classroom training" class="course-icon" />
+              <span class="course-tag">Enterprise</span>
+            </div>
+            <div class="card-body">
+              <h3>Corporate Readiness Assessment</h3>
+              <p>Practical exam for IT teams. Benchmark skills before enrolment, then upell into bulk tracks.</p>
+              <ul class="course-meta">
+                <li><span class="meta-label">Audience</span> <span class="meta-value">Entire IT teams</span></li>
+                <li><span class="meta-label">Delivery</span> <span class="meta-value">Remote or on-site</span></li>
+              </ul>
+              <a href="corporate.html" class="btn btn-ghost">Corporate Enquiry</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="tools" class="courses" style="background:linear-gradient(180deg,#0b1220,#0c1322 60%,#0b1220)">
+    <!-- Trust badges / toolbelt -->
+    <section class="courses" style="background:linear-gradient(180deg,#0a0f1c,#0f172a 60%,#0a0f1c)" aria-labelledby="tools-title">
       <div class="container">
-        <h2 class="section-title">Immediate Forensic Toolkit</h2>
-        <p class="section-sub">Achieve mastery over platforms that translate directly to real-world day-one job readiness.</p>
-        <div class="grid two">
-          <div class="card" style="padding:18px">
-            <h3>Professional Platforms</h3>
-            <ul class="checklist">
-              <li>&#10003; Wireshark &mdash; protocol analysis</li>
-              <li>&#10003; Burp Suite Professional &mdash; web app testing</li>
-              <li>&#10003; FTK Imager &mdash; evidence acquisition</li>
-              <li>&#10003; EnCase / Guidance workflows</li>
-            </ul>
-          </div>
-          <div class="card" style="padding:18px">
-            <h3>Open-Source &amp; Incident Response</h3>
-            <ul class="checklist">
-              <li>&#10003; Metasploit Framework &mdash; exploitation</li>
-              <li>&#10003; Volatility &mdash; memory forensics</li>
-              <li>&#10003; Autopsy &mdash; disk analysis</li>
-              <li>&#10003; KAPE / Rapid7 triage tooling</li>
-            </ul>
-          </div>
+        <h2 id="tools-title" class="section-title">Operator Toolbelt</h2>
+        <p class="section-sub">Certification means nothing without tool fluency. Graduates work the same platforms as T1 SOCs.</p>
+        <div class="toolbelt" aria-label="Tooling platform list">
+          <span class="tool-chip">Wireshark</span>
+          <span class="tool-chip">Burp Suite Professional</span>
+          <span class="tool-chip">Metasploit Framework</span>
+          <span class="tool-chip">Volatility / Volatility3</span>
+          <span class="tool-chip">Autopsy</span>
+          <span class="tool-chip">FTK Imager</span>
+          <span class="tool-chip">X-Ways</span>
+          <span class="tool-chip">Cellebrite</span>
+          <span class="tool-chip">KAPE</span>
+          <span class="tool-chip">Nmap</span>
+          <span class="tool-chip">BloodHound</span>
+          <span class="tool-chip">OSQuery</span>
+        </div>
+
+        <div class="badges" style="margin-top:18px" aria-label="Compliance and assurance markers">
+          <span class="badge ok">&#10003; ASD Essential Eight</span>
+          <span class="badge ok">&#10003; ASD ISM</span>
+          <span class="badge ok">&#10003; NIST CSF</span>
+          <span class="badge">&#10003; MITRE ATT&amp;CK</span>
+          <span class="badge">&#10003; OWASP Top 10</span>
+          <span class="badge ok">&#128274; $10M Audited Cyber Liability</span>
+          <span class="badge ok">&#127970; AU-East Hosting</span>
         </div>
       </div>
     </section>
 
     <section id="videos" class="videos" aria-labelledby="videos-title">
       <div class="container">
-        <h2 id="videos-title" class="section-title">Sample Video Content</h2>
-        <p class="section-sub">Preview the style, depth and production quality of our training material.</p>
+        <h2 id="videos-title" class="section-title">Operational Briefings</h2>
+        <p class="section-sub">Short, technical previews of real exercise walkthroughs.</p>
         <div class="grid two video-grid">
           <article class="card video-card">
             <a class="video-thumb" href="#" aria-label="Play: Reconnaissance Foundations">
-              <div class="video-poster">Recon Foundations Preview</div>
+              <img src="assets/imgs/hero-ops.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.35" />
               <span class="video-play" aria-hidden="true">&#9654;</span>
             </a>
             <div class="card-body">
               <h3>Reconnaissance Foundations</h3>
-              <p>OSINT, passive DNS, Shodan, Maltego, and threat intelligence baseline gathering.</p>
+              <p>Passive DNS, Shodan, Maltego, and target baseline methodology.</p>
             </div>
           </article>
           <article class="card video-card">
             <a class="video-thumb" href="#" aria-label="Play: Writing a Pen Test Report Clients Actually Read">
-              <div class="video-poster">Report Writing Preview</div>
+              <img src="assets/imgs/redteam.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.35" />
               <span class="video-play" aria-hidden="true">&#9654;</span>
             </a>
             <div class="card-body">
               <h3>Writing a Pen Test Report Clients Actually Read</h3>
-              <p>Structure, prioritisation, language, remediation guidance, and executive summary design.</p>
+              <p>Structure, prioritisation, executive narrative, and remediation guidance.</p>
             </div>
           </article>
         </div>
@@ -221,19 +296,16 @@
             <div class="plan-header">
               <h3>Essential</h3>
               <p class="plan-desc">Self-paced learning with direct access to course content and practice labs.</p>
-              <div class="plan-price">
-                <span class="currency">$</span>
-                <span class="amount">1,490</span>
-              </div>
+              <div class="plan-price"><span class="currency">$</span><span class="amount">1,490</span></div>
               <span class="plan-price-note">per course</span>
             </div>
             <ul class="checklist">
-              <li>&#10003; Full HD video library</li>
-              <li>&#10003; Downloadable lab environments</li>
-              <li>&#10003; Course completion certificate</li>
-              <li>&#10003; Community access</li>
+              <li>Full HD video library</li>
+              <li>Downloadable lab environments</li>
+              <li>Course completion certificate</li>
+              <li>Community access</li>
             </ul>
-            <a href="#enrol" class="btn btn-primary btn-block">Get Started</a>
+            <div class="plan-cta"><a href="contact.html" class="btn btn-primary btn-block">Enquire</a></div>
           </div>
 
           <div class="card plan-card plan-featured">
@@ -241,40 +313,37 @@
             <div class="plan-header">
               <h3>Professional</h3>
               <p class="plan-desc">Everything in Essential plus labs review, coaching and exam prep.</p>
-              <div class="plan-price">
-                <span class="currency">$</span>
-                <span class="amount">2,990</span>
-              </div>
+              <div class="plan-price"><span class="currency">$</span><span class="amount">2,990</span></div>
               <span class="plan-price-note">per course</span>
             </div>
             <ul class="checklist">
-              <li>&#10003; Everything in Essential</li>
-              <li>&#10003; Instructor lab reviews</li>
-              <li>&#10003; Weekly coaching sessions</li>
-              <li>&#10003; CVIR pathway mapping</li>
-              <li>&#10003; Priority support</li>
+              <li>Everything in Essential</li>
+              <li>Instructor lab reviews</li>
+              <li>Weekly coaching sessions</li>
+              <li>Pathway mapping</li>
+              <li>Priority support</li>
             </ul>
-            <a href="#enrol" class="btn btn-accent btn-block">Enrol Now</a>
+            <div class="plan-cta"><a href="contact.html" class="btn btn-accent btn-block">Enrol Now</a></div>
           </div>
 
           <div class="card plan-card">
             <div class="plan-header">
               <h3>Enterprise</h3>
               <p class="plan-desc">Custom learning paths, SCORM-ready content, dashboards, and dedicated success manager.</p>
-              <div class="plan-price">
-                <span class="currency">$</span>
-                <span class="amount">12K</span>
-              </div>
+              <div class="plan-price"><span class="currency">$</span><span class="amount">12K</span></div>
               <span class="plan-price-note">Minimum annual engagement</span>
             </div>
             <ul class="checklist">
-              <li>&#10003; Everything in Professional</li>
-              <li>&#10003; Custom learning paths</li>
-              <li>&#10003; Progress dashboards</li>
-              <li>&#10003; SCORM / xAPI ready</li>
-              <li>&#10003; Dedicated success manager</li>
+              <li>Everything in Professional</li>
+              <li>Custom learning paths</li>
+              <li>Progress dashboards</li>
+              <li>SCORM / xAPI ready</li>
+              <li>Dedicated success manager</li>
             </ul>
-            <a href="#enrol" class="btn btn-primary btn-block">Talk to Sales</a>
+            <div class="plan-cta">
+              <a href="corporate.html" class="btn btn-primary btn-block">Talk to Sales</a>
+              <a href="assets/resources/corporate-training-justification-pack.pdf" class="btn btn-ghost btn-block">Manager Justification Kit</a>
+            </div>
           </div>
         </div>
       </div>
@@ -288,15 +357,18 @@
           <p>Our instructors bring real offensive-security, incident-response, intelligence, and law enforcement backgrounds. Every course is built around practical exercises, not theory.</p>
           <div class="feature-list">
             <div class="feature"><strong>Real environments.</strong> Vulnerable apps, networks, and disk images.</div>
-            <div class="feature"><strong>Accredited framing.</strong> Aligned to ACSF and TAFE pathways.</div>
-            <div class="feature"><strong>Career outcomes.</strong> Resume reviews, interview prep, and employer introductions.</div>
+            <div class="feature"><strong>Physical hubs.</strong> On-site bootcamps and corporate briefings in Sydney and Penrith.</div>
+            <div class="feature"><strong>Employer pipeline.</strong> Graduate portfolio reviews, hiring introductions, and employer showcases.</div>
+            <div class="feature"><strong>Auditable.</strong> Progress reporting for corporate sponsors and workforce benchmarking.</div>
           </div>
         </div>
         <aside class="quote-card card" aria-label="Testimonial">
-          <blockquote>
-            "The best structured ethical hacking content I've used as a trainer. The labs alone are worth the price."
-            <footer>&#8212; Senior security consultant, Australia</footer>
-          </blockquote>
+          <div class="card-body">
+            <blockquote>
+              "The best structured ethical hacking content I've used as a trainer. The labs alone are worth the price."
+              <footer>&#8212; Senior security consultant, Australia</footer>
+            </blockquote>
+          </div>
         </aside>
       </div>
     </section>
@@ -304,89 +376,107 @@
     <section id="enrol" class="enrol" aria-labelledby="enrol-title">
       <div class="container">
         <div class="enrol-card card">
-          <h2 id="enrol-title" class="section-title">Enquire / Enrol</h2>
-          <form class="enrol-form" novalidate>
-            <div class="grid two">
-              <div class="field">
-                <label for="fname">First name</label>
-                <input id="fname" type="text" required />
+          <div class="card-body">
+            <h2 id="enrol-title" class="section-title">Enquire / Enrol</h2>
+            <form class="enrol-form" novalidate>
+              <div class="grid two">
+                <div class="field">
+                  <label for="fname">First name</label>
+                  <input id="fname" type="text" required autocomplete="given-name" />
+                </div>
+                <div class="field">
+                  <label for="lname">Last name</label>
+                  <input id="lname" type="text" required autocomplete="family-name" />
+                </div>
               </div>
               <div class="field">
-                <label for="lname">Last name</label>
-                <input id="lname" type="text" required />
+                <label for="email">Work email</label>
+                <input id="email" type="email" required autocomplete="email" />
               </div>
-            </div>
-            <div class="field">
-              <label for="email">Work email</label>
-              <input id="email" type="email" required />
-            </div>
-            <div class="field">
-              <label for="course">Course interest</label>
-              <select id="course">
-                <option value="">Select a course</option>
-                <option>Intro to Ethical Hacking</option>
-                <option>Web Application Penetration Testing</option>
-                <option>Ethical Social Engineering</option>
-                <option>Digital Forensics &amp; Incident Response</option>
-                <option>Enterprise / Team Training</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="message">Message</label>
-              <textarea id="message" rows="4"></textarea>
-            </div>
-            <button type="submit" class="btn btn-accent btn-lg btn-block">Submit Enquiry</button>
-            <p class="form-note">Human review within 1 business day. No spam.</p>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div>
-          <strong>Hacking101</strong>
-          <p class="muted">hacking101.com.au<br/>Australian Cyber Security Academy Pty Ltd</p>
-          <p class="muted" style="margin-top:4px">Hosted in secure AU-East datacentres</p>
-        </div>
-        <div>
-          <strong>Programmes</strong>
-          <ul>
-            <li><a href="#courses">Courses</a></li>
-            <li><a href="#videos">Videos</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="corporate.html">Enterprise Gateway</a></li>
-          </ul>
-        </div>
-        <div>
-          <strong>Legal</strong>
-          <ul>
-            <li><a href="terms.html">Terms of Use</a></li>
-            <li><a href="privacy.html">Privacy</a></li>
-            <li><a href="responsible-use.html">Responsible Disclosure & Use</a></li>
-          </ul>
-        </div>
-        <div>
-          <strong>Contact</strong>
-          <ul>
-            <li><a href="mailto:enquiries@hacking101.com.au">enquiries@hacking101.com.au</a></li>
-            <li><a href="tel:+616****8545">+61 60 626 8545</a></li>
-          </ul>
-          <div style="margin-top:10px">
-            <strong>Verify Certificate</strong>
-            <form class="verify-form" style="display:flex;gap:6px;margin-top:4px" onsubmit="event.preventDefault();this.querySelector('button').textContent='Lookup...'">
-              <input type="text" placeholder="Certificate ID /姓名" style="width:100%;background:rgba(255,255,255,.04);border:1px solid rgba(138,160,191,.18);color:#eaf2ff;border-radius:8px;padding:7px 10px;font:inherit;font-size:.88rem" />
-              <button type="submit" class="btn btn-ghost" style="padding:7px 12px;font-size:.82rem;border-radius:8px">Verify</button>
+              <div class="field">
+                <label for="course">Course interest</label>
+                <select id="course">
+                  <option value="">Select a course</option>
+                  <option>Intro to Ethical Hacking</option>
+                  <option>Web Application Penetration Testing</option>
+                  <option>Ethical Social Engineering</option>
+                  <option>Digital Forensics &amp; Incident Response</option>
+                  <option>Corporate Readiness Assessment</option>
+                  <option>Enterprise / Team Training</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" rows="4"></textarea>
+              </div>
+              <button type="submit" class="btn btn-accent btn-lg btn-block">Submit Enquiry</button>
+              <p class="form-note">Human review within 1 business day. No spam.</p>
             </form>
-            <p class="muted" style="font-size:.78rem;margin-top:4px">Instant industry lookup.</p>
           </div>
         </div>
       </div>
-      <div class="container legal-line">
-        <small>&copy; Hacking101 Academy. Use skills responsibly. Unauthorised access is a criminal offence.</small>
-      </div>
-    </footer>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Hacking<span class="accent">101</span></strong>
+        <p>Australian Cyber Security Academy Pty Ltd<br/>Secure technical hubs &#8212; Sydney / Penrith<br/>Hosted in AU-East datacentres<br/>ABN placeholder | ACN placeholder</p>
+        <div class="footer-insurance">&#128274; Covered by $10M Audited Cyber Liability Insurance</div>
+      </div>
+      <div>
+        <strong>Programmes</strong>
+        <ul class="footer-links">
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="status.html">System Status</a></li>
+          <li><a href="compliance.html">Compliance</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </div>
+      <div>
+        <strong>Company</strong>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="advisors.html">Advisory Board</a></li>
+          <li><a href="alumni.html">Alumni Tracker</a></li>
+          <li><a href="intelligence.html">Threat Intel</a></li>
+          <li><a href="?role=open">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <strong>Partners &amp; Clients</strong>
+        <ul class="footer-links">
+          <li><a href="corporate.html">Corporate Training</a></li>
+          <li><a href="?role=open">Hiring Portal</a></li>
+          <li><a href="contact.html">Partnership Enquiries</a></li>
+          <li><a href="assets/resources/corporate-training-justification-pack.pdf">Manager Kit</a></li>
+        </ul>
+      </div>
+      <div>
+        <strong>Legal</strong>
+        <ul class="footer-links">
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="responsible-use.html">Responsible Disclosure &amp; Use</a></li>
+          <li><a href="404.html">Incident / Breach Report</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <div class="legal">
+        <span>&copy; Hacking101 Academy. Use skills responsibly. Unauthorised access is a criminal offence.</span>
+      </div>
+      <div class="legal">
+        <span>Australian Cyber Security Academy Pty Ltd</span>
+        <span>ABN placeholder</span>
+        <span>ACN placeholder</span>
+      </div>
+    </div>
+  </footer>
+
   <script src="assets/main.js"></script>
 </body>
 </html>
