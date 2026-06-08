@@ -78,7 +78,7 @@
                   <li><span class="meta-label">Audience</span> <span class="meta-value">New analysts, IT staff</span></li>
                   <li><span class="meta-label">Compliance</span> <span class="meta-value">ISM / AFP Guidelines</span></li>
                 </ul>
-                <a href="./signature-handwriting-analysis/index.html" class="btn btn-primary">View Module</a>
+                <a href="./digital-evidence-chain-of-custody/index.html" class="btn btn-primary">View Module</a>
                 <a href="../resources.html" class="btn btn-ghost" style="margin-top:8px">Sample Evidence Pack</a>
               </div>
             </article>
@@ -96,7 +96,7 @@
                   <li><span class="meta-label">Labs</span> <span class="meta-value">28 hands-on</span></li>
                   <li><span class="meta-label">Tooling</span> <span class="meta-value">Autopsy, Volatility, KAPE</span></li>
                 </ul>
-                <a href="../courses.html" class="btn btn-primary">See Full Course</a>
+                <a href="./disk-memory-forensics/index.html" class="btn btn-primary">View Module</a>
               </div>
             </article>
 
@@ -116,6 +116,57 @@
                 <a href="./signature-handwriting-analysis/index.html" class="btn btn-primary">Study This Module</a>
               </div>
             </article>
+
+            <article class="card course-card">
+              <div class="card-media">
+                <div class="resource-icon">&#127760;</div>
+                <span class="course-tag">Intermediate</span>
+              </div>
+              <div class="card-body">
+                <h3>Network Forensics</h3>
+                <p>Packet capture analysis, flow record examination, C2 beacon detection, and intrusion evidence identification with Wireshark, Zeek, and Suricata.</p>
+                <ul class="course-meta">
+                  <li><span class="meta-label">Level</span> <span class="meta-value">Intermediate</span></li>
+                  <li><span class="meta-label">Labs</span> <span class="meta-value">28 hands-on</span></li>
+                  <li><span class="meta-label">Tooling</span> <span class="meta-value">Wireshark, Zeek, Suricata</span></li>
+                </ul>
+                <a href="./network-forensics/index.html" class="btn btn-primary">View Module</a>
+              </div>
+            </article>
+
+            <article class="card course-card">
+              <div class="card-media">
+                <div class="resource-icon">&#128128;</div>
+                <span class="course-tag">Advanced</span>
+              </div>
+              <div class="card-body">
+                <h3>Malware Analysis &amp; Reverse Engineering</h3>
+                <p>Static and dynamic analysis, PE/ELF dissection, sandbox execution, disassembly with Ghidra, debugging with x64dbg, and YARA rule development.</p>
+                <ul class="course-meta">
+                  <li><span class="meta-label">Level</span> <span class="meta-value">Advanced</span></li>
+                  <li><span class="meta-label">Labs</span> <span class="meta-value">30 hands-on</span></li>
+                  <li><span class="meta-label">Tooling</span> <span class="meta-value">Ghidra, x64dbg, CAPE, YARA</span></li>
+                </ul>
+                <a href="./malware-analysis/index.html" class="btn btn-primary">View Module</a>
+              </div>
+            </article>
+
+            <article class="card course-card">
+              <div class="card-media">
+                <div class="resource-icon">&#9878;</div>
+                <span class="course-tag">Professional</span>
+              </div>
+              <div class="card-body">
+                <h3>Incident Response &amp; Court Reporting</h3>
+                <p>End-to-end IR methodology, live-response triage, root cause analysis, expert report writing, and courtroom testimony preparation with mock cross-examination.</p>
+                <ul class="course-meta">
+                  <li><span class="meta-label">Level</span> <span class="meta-value">Professional</span></li>
+                  <li><span class="meta-label">Labs</span> <span class="meta-value">20 scenario-based</span></li>
+                  <li><span class="meta-label">Focus</span> <span class="meta-value">Court-ready reporting & testimony</span></li>
+                </ul>
+                <a href="./incident-response-court-reporting/index.html" class="btn btn-primary">View Module</a>
+              </div>
+            </article>
           </div>
         </div>
       </section>
@@ -128,44 +179,50 @@
           </p>
 
           <div class="aeo-answer">
-            Hacking101 Forensic Analysis 101 topics cover: legal foundations, forensic imaging, evidence preservation, artefact analysis, malware analysis, incident triage, and courtroom-ready forensic reporting — taught via live Australian-hosted lab environments.
+            Hacking101 Forensic Analysis 101 topics cover: legal foundations, forensic imaging, evidence preservation, artefact analysis, malware reverse engineering, network intrusion forensics, incident response triage, questioned document examination, and courtroom-ready forensic reporting — taught via live Australian-hosted lab environments.
           </div>
 
           <div class="grid three">
             <article class="card">
               <div class="card-body">
-                <h3>Evidence Collection</h3>
-                <p>Disks, phones, memory, cloud credentials. Collection according to current AFP and state forensic guidelines.</p>
+                <h3>Evidence Collection &amp; Chain of Custody</h3>
+                <p>Disks, phones, memory, cloud credentials. Collection according to current AFP and state forensic guidelines with unbroken chain-of-custody documentation.</p>
+                <a href="./digital-evidence-chain-of-custody/index.html" style="color:var(--accent);font-size:.85rem">View Module &rarr;</a>
               </div>
             </article>
             <article class="card">
               <div class="card-body">
-                <h3>Live Response</h3>
-                <p>Volatile evidence capture, snapshotting, memory acquisition, and ensuring chain-of-custody is not broken.</p>
+                <h3>Live Response &amp; Memory Forensics</h3>
+                <p>Volatile evidence capture, memory acquisition with WinPmem and LiME, Volatility 3 analysis, and process reconstruction from RAM dumps.</p>
+                <a href="./disk-memory-forensics/index.html" style="color:var(--accent);font-size:.85rem">View Module &rarr;</a>
               </div>
             </article>
             <article class="card">
               <div class="card-body">
-                <h3>Disk Analysis</h3>
-                <p>File system artefact recovery, timeline buildout, slack space, unallocated clusters, deleted artefacts.</p>
+                <h3>Disk Analysis &amp; Timeline Construction</h3>
+                <p>File system artefact recovery, MFT analysis, slack space examination, super-timeline buildout with Plaso, and deleted artefact reconstruction.</p>
+                <a href="./disk-memory-forensics/index.html" style="color:var(--accent);font-size:.85rem">View Module &rarr;</a>
               </div>
             </article>
             <article class="card">
               <div class="card-body">
-                <h3>Malware Forensics</h3>
-                <p>Static and dynamic analysis, unpacking, memory-resident payload reconstruction, and IOCs.</p>
+                <h3>Malware Analysis &amp; Reverse Engineering</h3>
+                <p>Static and dynamic analysis, PE/ELF dissection, unpacking, disassembly with Ghidra, debugging with x64dbg, and YARA rule development for IOC extraction.</p>
+                <a href="./malware-analysis/index.html" style="color:var(--accent);font-size:.85rem">View Module &rarr;</a>
               </div>
             </article>
             <article class="card">
               <div class="card-body">
                 <h3>Document / Handwriting Forensics</h3>
-                <p>Questioned documents, signature verification, forger trait identification, and report construction.</p>
+                <p>Questioned document examination, signature verification, forger trait identification, ACE-V methodology, and expert opinion construction.</p>
+                <a href="./signature-handwriting-analysis/index.html" style="color:var(--accent);font-size:.85rem">View Module &rarr;</a>
               </div>
             </article>
             <article class="card">
               <div class="card-body">
-                <h3>Court-Ready Reporting</h3>
-                <p>Structuring evidence summaries, technical statements, and expert witness testimony preparation.</p>
+                <h3>Court-Ready Reporting &amp; Testimony</h3>
+                <p>Structuring expert forensic statements, qualifying opinions for admissibility, witness-box preparation, and handling adversarial cross-examination.</p>
+                <a href="./incident-response-court-reporting/index.html" style="color:var(--accent);font-size:.85rem">View Module &rarr;</a>
               </div>
             </article>
           </div>
@@ -177,7 +234,11 @@
           <h2 id="faqs-title" class="section-title">Frequently Asked Questions</h2>
           <div class="aeo-answer">
             <strong>How does Forensic Analysis 101 relate to full Hacking101 DFIR courses?</strong><br/>
-            Forensic Analysis 101 is the foundation pathway. Students start here, then progress to the full 10-week Professional DFIR programme that includes memory forensics, malware analysis, and courtroom testimony practice. Those interested in signature and handwriting analysis specialize through the dedicated Signature &amp; Handwriting Analysis module.
+            Forensic Analysis 101 is the complete foundation-to-professional pathway across six integrated modules. Students progress from Digital Evidence &amp; Chain of Custody through Disk &amp; Memory Forensics, Network Forensics, Malware Analysis &amp; Reverse Engineering, Signature &amp; Handwriting Analysis, and cap it with Incident Response &amp; Court Reporting — a structured curriculum covering the end-to-end forensic workflow at Australian federal court admissibility standards.
+          </div>
+          <div class="aeo-answer" style="margin-top:16px">
+            <strong>Can I take modules individually?</strong><br/>
+            Yes. Every module is offered as a standalone course with its own pricing, labs, and certificate of completion. Start with the module that matches your current skill level and build outward.
           </div>
         </div>
       </section>
@@ -186,14 +247,14 @@
         <div class="container">
           <div class="aeo-answer">
             <strong>Where does this live?</strong><br/>
-            Directory path: <code>www.hacking101.com.au/forensic-analysis-101/</code><br/>
-            Submodule path: <code>www.hacking101.com.au/forensic-analysis-101/signature-handwriting-analysis/</code>
+            Directory: <code>www.hacking101.com.au/forensic-analysis-101/</code><br/>
+            All six modules live under this path. Each module has its own dedicated subdirectory with full course content, tools listings, advisories, and enrolment options.
           </div>
           <p class="section-sub" style="margin-top:14px">
-            Ready to explore? Start with the Signature &amp; Handwriting Analysis module or switch back to main courses.
+            Ready to start? Choose your module below or browse the full course catalogue.
           </p>
           <div class="hero-ctas">
-            <a href="./signature-handwriting-analysis/index.html" class="btn btn-primary btn-lg">Signature &amp; Handwriting Analysis</a>
+            <a href="./digital-evidence-chain-of-custody/index.html" class="btn btn-primary btn-lg">Start with Evidence &amp; Chain of Custody</a>
             <a href="../courses.html" class="btn btn-ghost btn-lg">All Courses</a>
           </div>
         </div>
@@ -208,10 +269,14 @@
           <p class="muted">enquiries@hacking101.com.au<br/>+61 60 626 8545</p>
         </div>
         <div>
-          <strong>Forensic Pathways</strong>
+          <strong>Forensic Modules</strong>
           <ul>
-            <li><a href="index.html">Forensic Analysis 101</a></li>
+            <li><a href="digital-evidence-chain-of-custody/index.html">Digital Evidence &amp; Chain of Custody</a></li>
+            <li><a href="disk-memory-forensics/index.html">Disk &amp; Memory Forensics</a></li>
+            <li><a href="network-forensics/index.html">Network Forensics</a></li>
+            <li><a href="malware-analysis/index.html">Malware Analysis &amp; Reverse Engineering</a></li>
             <li><a href="signature-handwriting-analysis/index.html">Signature &amp; Handwriting Analysis</a></li>
+            <li><a href="incident-response-court-reporting/index.html">Incident Response &amp; Court Reporting</a></li>
             <li><a href="../courses.html">All Courses</a></li>
           </ul>
         </div>
